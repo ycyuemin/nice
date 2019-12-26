@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shoppingcar.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topnav">
+        <!-- 版心 -->
+        <div class="container clearfix">
+            <!-- 左边文字 -->
+            <div class="fl">legochina.cn</div>
+            <!-- 右边文字 -->
+            <div class="fr">欢迎光临
+                <a href="index.html">乐购</a>，请
+                <a href="sign.html">登陆</a> \
+                <a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="shopheader container clearfix">
+        <div class="logo">
+            <img src="images/shopping1_1.gif" alt="">
+            <!-- <p>全部商品分类</p> -->
+        </div>
+        <!-- 搜索 -->
+        <div class="search clearfix">
+            <form>
+                <input type="text" name="keywords" placeholder="设计中的设计">
+                <button type="submit">搜索</button>
+            </form>
+            
+        </div>
+            <!-- 配送 -->
+            <div class="peisong fr">
+                <span>配送至</span>
+                <select name="" id="">
+                    <option value="">成都高新区三环内&nbsp;</option>
+                    <option value="">成都武侯区三环内&nbsp;</option>
+                    <option value="">成都成华区三环内&nbsp;</option>
+                </select>
+            </div>
+        </div>
+            
+    <!-- 全部商品 -->
+    <div class="shoping container">
+        <!-- 标题 -->
+        <div class="tit">
+            <a href="#" class="col">全部商品(2)</a>
+        </div>
+        <!-- 全选 -->
+        <div class="all">
+            <!-- 文字 -->
+            <input type="checkbox" class="checkb" name="checkbox" id="" value="全选">
+            <span>全选</span>
+            <span>商品</span>
+            <span>单价</span>
+            <span>数量</span>
+            <span>小计</span>
+            <span>操作</span>
+        </div>
+        <div class="center clearfix">
+            <div class="one clearfix">
+            <input type="checkbox" class="checkb fl" name="checkbox" id=""> 
+            <div class="tu fl">
+                <img src="images/index08_05.jpg" alt="">
+            </div>     
+            <div class="fl yi">从你的全世界路过</div>
+            <div class="fl er">41.00</div> 
+           <div class="clearfix san fl">
+                <p>
+                    <input type="button" value="-" />
+                    <input type="text" value="1" />
+                    <input type="button" value="+" />
+                </p>
+               </div>
+                <div class="si fl">41.00</div>
+               <div class="wu fl">
+                    <button>删除</button>
+                    <p><a href="#">移到我的关注</a> </p>
+                </div>       
+            </div> 
+            <div class="one clearfix">
+                    <input type="checkbox" class="checkb fl" name="checkbox" id=""> 
+                    <div class="tu fl">
+                        <img src="images/index08_05.jpg" alt="">
+                    </div>     
+                    <div class="fl yi">从你的全世界路过</div>
+                    <div class="fl er">41.00</div> 
+                   <div class="clearfix san fl">
+                        <p>
+                            <input type="button" value="-" />
+                            <input type="text" value="1" />
+                            <input type="button" value="+" />
+                        </p>
+                       </div>
+                        <div class="si fl">41.00</div>
+                       <div class="wu fl">
+                            <button>删除</button>
+                            <p><a href="#">移到我的关注</a> </p>
+                        </div>       
+                </div>
+        </div>
+        <!-- 全选，删除 -->
+        <div class="btu clearfix">
+                <input type="checkbox" class="checkb" name="checkbox" id="" value="全选"> 
+                <span>全选</span>
+                <span>删除已选中商品</span>
+                <span>已选中<span class="col">1</span>件商品</span>
+                <span>总价：<span class="col">41.00</span></span>
+                <span class="fr"><a href="money.html">去结算</a></span>        
+        </div>
+    </div>
+
+    <!-- 猜你喜欢 -->
+    <div class="cailike container">
+        <!-- 标题 -->
+        <div class="tit">
+            <a href="#">猜你喜欢</a>
+        </div>
+        <!-- 内容 -->
+        <div class="likeMenu clearfix">
+            <div class="fl pic clearfix">
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 插图 -->
+    <div class="photo container">
+        <img src="images/moshoushijie.jpg" alt="">
+    </div>
+
+     <!-- 底部 -->
+     <div class="foot">
+        <div class="top">
+            <div class="center">
+                <img src="images/222_11.png" alt="">
+                <img src="images/222_13(1).png" alt="">
+                <img src="images/222_15.png" alt="">
+                <img src="images/222_17.png" alt="">
+            </div>
+        </div>
+        <!-- 列表 -->
+        <div class="list clearfix container">
+            <ul class="fl">
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">发票制度</a></li>
+                <li><a href="#">账户管理</a></li>
+                <li><a href="#">会员优惠</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">支付方式</a></li>
+                <li><a href="#">货到付款</a></li>
+                <li><a href="#">网上支付</a></li>
+                <li><a href="#">礼品卡支付</a></li>
+                <li><a href="#">银行转账</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">订单服务</a></li>
+                <li><a href="#">订单配送查询</a></li>
+                <li><a href="#">订单状态说明</a></li>
+                <li><a href="#">自助取消订单</a></li>
+                <li><a href="#">自助修改订单</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">退换货</a></li>
+                <li><a href="#">退换货政策</a></li>
+                <li><a href="#">自助申请退换货</a></li>
+                <li><a href="#">自助申请退换货</a></li>
+                <li><a href="#">自助申请退换货</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">商家服务</a></li>
+                <li><a href="#">商家中心</a></li>
+                <li><a href="#">运营服务</a></li>
+                <li><a href="#">加入唯品会</a></li>
+            </ul>
+            <div class="logo2 fr">
+            <img src="images/logo_00.png" alt="">
+        </div>
+        </div>
+       
+
+        <div class="bot">
+               <a href="#">公司简介</a>|
+                <a href="#">Investor Relations</a>|
+                <a href="#">网站联盟</a>|
+                <a href="#">乐购招商</a>|
+                <a href="#">机构销售</a>|
+                <a href="#">手机乐购</a>|
+                <a href="#">官方Blog</a>|
+                <a href="#">热词搜索</a>
+        </div>
+        <div class="last">
+            <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

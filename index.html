@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐购商城</title>
+    <!-- 引入文件 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/banner.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topnav">
+        <!-- 版心 -->
+        <div class="container clearfix">
+            <!-- 左边文字 -->
+            <div class="fl">legochina.cn</div>
+            <!-- 右边文字 -->
+            <div class="fr">欢迎光临
+                <a href="index.html">乐购</a>，请
+                <a href="sign.html">登陆</a> \
+                <a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- logo -->
+    <div class="header container clearfix">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+            <p>全部商品分类</p>
+        </div>
+        <!-- 搜索 -->
+        <div class="search clearfix">
+            <form>
+                <input type="text" name="keywords" placeholder="创意文具">
+                <button type="submit">搜索</button>
+            </form>
+            <a href="order.html" class="myorder">我的订单</a>
+            <a href="shoppingcar.html" class="shopping">购物车 3</a>
+
+            <!-- 导航栏 -->
+            <div class="nav">
+                <a href="./product.html">图书</a>
+                <a href="#">电子书</a>
+                <a href="#">原创文学</a>
+                <a href="#">服装</a>
+                <a href="#">运动户外</a>
+                <a href="#">孕婴童</a>
+                <a href="#">家居</a>
+                <a href="#">创意文具</a>
+                <a href="#">地方特产</a>
+                <a href="#">海外购</a>
+                <a href="#">电器城</a>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边栏 -->
+    <!-- 左边盒子 -->
+    <div class="container clearfix big">
+        <!--楼层效果-->
+			<div class="floor">
+                    <a href="#">图书</a>
+                    <a href="#">服装</a>
+                    <a href="#">运动</a>
+                    <a href="#">童装</a>
+                    <a href="#">家居</a>
+                </div>
+        <div class="btns fl">
+            <a href="#">图书、电子书、童书</a>
+            <a href="#">创意文具</a>
+            <a href="#">服饰、内衣</a>
+            <a href="#">鞋靴、箱包</a>
+            <a href="#">运动户外</a>
+            <a href="#">孕、婴、童</a>
+            <a href="#">家居、家纺、汽车</a>
+            <a href="#">家具、家装、康体</a>
+            <a href="#">美妆、个人护理、成人</a>
+            <a href="#">食品、茶酒、生鲜</a>
+            <a href="#">腕表、珠宝、眼镜</a>
+            <a href="#">手机、数码</a>
+            <a href="#">电脑办公</a>
+            <a href="#">家用电器</a>
+        </div>
+
+        <!-- 右边盒子 -->
+        <div class="box fr clearfix">
+
+            <!-- 轮播盒子 -->
+            <div class="banner fl">
+                <div class="banner" id="banner1" style="margin: 0 auto;">
+                    <div class="banner-view"></div>
+                    <div class="banner-btn"></div>
+                    <div class="banner-number"></div>
+                    <div class="banner-progres"></div>
+                </div>
+                <script type="text/javascript">
+                    var banner = new FragmentBanner({
+                        container: "#banner1",//选择容器 必选
+                        imgs: ['./images/banner01.jpg', './images/banner2.jpg', './images/banner3.jpg', './images/banner4.jpg', './images/banner5.jpg', './images/banner6.jpg'],//图片集合 必选
+                        size: {
+                            width: 1000,
+                            height: 430
+                        },//容器的大小 可选
+                        //行数与列数 可选
+                        grid: {
+                            line: 12,
+                            list: 14
+                        },
+                        index: 0,//图片集合的索引位置 可选
+                        boxTime: 2000,//小方块来回运动的时长 可选
+                        fnTime: 3000//banner切换的时长 可选
+                    });
+                </script>
+            </div>
+                <div class="wrap">
+                    <div class="box1">
+                        <p>
+                            <a href="#">图书馆&gt;&gt;</a>
+                            <a href="#">儿童书馆&gt;&gt;</a>
+                            <a href="#">电子书馆&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">创意文具&gt;&gt;</a>
+                            <a href="#">创意文具&gt;&gt;</a>
+                            <a href="#">创意文具&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">服饰、内衣&gt;&gt;</a>
+                            <a href="#">服饰、内衣&gt;&gt;</a>
+                            <a href="#">服饰、内衣&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">鞋靴、箱包&gt;&gt;</a>
+                            <a href="#">鞋靴、箱包&gt;&gt;</a>
+                            <a href="#">鞋靴、箱包&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">运动户外&gt;&gt;</a>
+                            <a href="#">运动户外&gt;&gt;</a>
+                            <a href="#">运动户外&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">孕、婴、童&gt;&gt;</a>
+                            <a href="#">孕、婴、童&gt;&gt;</a>
+                            <a href="#">孕、婴、童&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">家居、家纺、汽车&gt;&gt;</a>
+                         
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">家具、家装、康体&gt;&gt;</a>
+                           
+                         
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">美妆、个人护理、成人&gt;&gt;</a>
+                          
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">图书111馆&gt;&gt;</a>
+                            <a href="#">222&gt;&gt;</a>
+                            <a href="#">22&2gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">333&gt;&gt;</a>
+                            <a href="#">333&gt;&gt;</a>
+                            <a href="#">333&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                        <p>
+                            <a href="#">666&gt;&gt;</a>
+                            <a href="#">666&gt;&gt;</a>
+                            <a href="#">66666&gt;&gt;</a>
+                        </p>
+                    </div>
+                    <div class="box1">
+                            <p>
+                                <a href="#">999999&gt;&gt;</a>
+                                <a href="#">999999&gt;&gt;</a>
+                                <a href="#">999999999&gt;&gt;</a>
+                            </p>
+                        </div>
+                        <div class="box1">
+                                <p>
+                                    <a href="#">020202020&gt;&gt;</a>
+                                    <a href="#">0202020&gt;&gt;</a>
+                                    <a href="#">0202020&gt;&gt;</a>
+                                </p>
+                            </div>
+                </div>
+            
+            
+        </div>
+
+    </div>
+
+    <!-- 乐购，今日推荐 -->
+    <div id="wrapper" class="container">
+        <!-- 标题 -->
+        <div class="title col">乐购·今日推荐</div>
+        <!-- 推荐列表 -->
+        <div class="list clearfix">
+            <div class="shoppingList">
+                <img src="images/pro02.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>黑爵青蜂侠六键电竞游戏鼠标</p>
+                <p class="col">全国联保，一年免费包换</p>
+                <p class="col">￥:299</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro02.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>黑爵青蜂侠六键电竞游戏鼠标</p>
+                <p class="col">全国联保，一年免费包换</p>
+                <p class="col">￥:299</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro02.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>黑爵青蜂侠六键电竞游戏鼠标</p>
+                <p class="col">全国联保，一年免费包换</p>
+                <p class="col">￥:299</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro02.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>黑爵青蜂侠六键电竞游戏鼠标</p>
+                <p class="col">全国联保，一年免费包换</p>
+                <p class="col">￥:299</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro02.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>黑爵青蜂侠六键电竞游戏鼠标</p>
+                <p class="col">全国联保，一年免费包换</p>
+                <p class="col">￥:299</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro02.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>黑爵青蜂侠六键电竞游戏鼠标</p>
+                <p class="col">全国联保，一年免费包换</p>
+                <p class="col">￥:299</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro01.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>小熊家用静音加湿器</p>
+                <p class="col">唯美外观 微米级喷雾</p>
+                <p class="col">￥:89</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro01.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>小熊家用静音加湿器</p>
+                <p class="col">唯美外观 微米级喷雾</p>
+                <p class="col">￥:89</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro01.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>小熊家用静音加湿器</p>
+                <p class="col">唯美外观 微米级喷雾</p>
+                <p class="col">￥:89</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro01.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>小熊家用静音加湿器</p>
+                <p class="col">唯美外观 微米级喷雾</p>
+                <p class="col">￥:89</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro01.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>小熊家用静音加湿器</p>
+                <p class="col">唯美外观 微米级喷雾</p>
+                <p class="col">￥:89</p>
+            </div>
+            <div class="shoppingList">
+                <img src="images/pro01.jpg" alt="">
+                <img src="images/flag.jpg" alt="">
+                <p>小熊家用静音加湿器</p>
+                <p class="col">唯美外观 微米级喷雾</p>
+                <p class="col">￥:89</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 电子书 -->
+    <div id="book" class="container clearfix floor1">
+        <!-- 标题 -->
+        <div class="title clearfix">
+            <div class="biaoti clearfix">图书 电子书
+                <ul class="fr clearfix">
+                    <li class="on fl">最新上架</li>
+                    <li class="fl">独家畅销</li>
+                    <li class="fl">电子书</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box fl clearfix" style="display: block;">
+            <!-- 左侧盒子：好书 -->
+            <div class="one fl">
+                <img src="./images/ebookLeft.jpg" alt="">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">中小学教辅</a>
+                    </li>
+                    <li>
+                        <a href="#">外语</a>
+                    </li>
+                    <li>
+                        <a href="#">考试</a>
+                    </li>
+                    <li>
+                        <a href="#">小说</a>
+                    </li>
+                    <li>
+                        <a href="#">文学</a>
+                    </li>
+                    <li>
+                        <a href="#">青春文学</a>
+                    </li>
+                    <li>
+                        <a href="#">成功\励志</a>
+                    </li>
+                    <li>
+                        <a href="#">管理</a>
+                    </li>
+                    <li>
+                        <a href="#">历史</a>
+                    </li>
+                    <li>
+                        <a href="#">哲学\宗教</a>
+                    </li>
+                    <li>
+                        <a href="#">亲子\家教</a>
+                    </li>
+                    <li>
+                        <a href="#">全部分类></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- +轮播 -->
+            <div class="two fl clearfix">
+                <div class="banner2">
+                    <div>
+                        <div class="banner" id="banner2" style="margin: 0 auto;">
+                            <div class="banner-view"></div>
+                            <div class="banner-btn"></div>
+                            <div class="banner-number"></div>
+                            <div class="banner-progres"></div>
+                        </div>
+                        <script type="text/javascript">
+                            var banner2 = new FragmentBanner({
+                                container: "#banner2",//选择容器 必选
+                                imgs: ['./images/ppt2_05.jpg'],//图片集合 必选
+                                size: {
+                                    width: 330,
+                                    height: 214
+                                },//容器的大小 可选
+                                //行数与列数 可选
+                                grid: {
+                                    line: 10,
+                                    list: 10
+                                },
+                                index: 0,//图片集合的索引位置 可选
+                                type: 2,//切换类型 1 ， 2 可选
+                                boxTime: 3000,//小方块来回运动的时长 可选
+                                fnTime: 5000//banner切换的时长 可选
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                <div>
+                    <p>奥运狂欢</p>
+                    <p class="col">10万种电子书 直降40%</p>
+                    <img src="images/index09_05.jpg" alt="">
+                    <span class="col">￥49</span>
+                    <del>￥79</del>
+                </div>
+                <div>
+                    <p>奥运狂欢</p>
+                    <p class="col">10万种电子书 直降40%</p>
+                    <img src="images/index09_05.jpg" alt="">
+                    <span class="col">￥49</span>
+                    <del>￥79</del>
+                </div>
+                <div>
+                    <p>奥运狂欢</p>
+                    <p class="col">10万种电子书 直降40%</p>
+                    <img src="images/index09_05.jpg" alt="">
+                    <span class="col">￥49</span>
+                    <del>￥79</del>
+                </div>
+                <div>
+                    <p>奥运狂欢</p>
+                    <p class="col">10万种电子书 直降40%</p>
+                    <img src="images/index09_05.jpg" alt="">
+                    <span class="col">￥49</span>
+                    <del>￥79</del>
+                </div>
+                <div>
+                    <p>奥运狂欢</p>
+                    <p class="col">10万种电子书 直降40%</p>
+                    <img src="images/index09_05.jpg" alt="">
+                    <span class="col">￥49</span>
+                    <del>￥79</del>
+                </div>
+                <div>
+                    <p>奥运狂欢</p>
+                    <p class="col">10万种电子书 直降40%</p>
+                    <img src="images/index09_05.jpg" alt="">
+                    <span class="col">￥49</span>
+                    <del>￥79</del>
+                </div>
+            </div>
+
+        </div>
+             <div class="box fl" style="display: none;background: aqua;">
+                 <h1 style="font-size: 40px;">这是2</h1>
+             </div> 
+             <div class="box fl" style="display: none;background: red;">
+                 <h1 style="font-size: 40px;">这是3</h1>
+             </div> 
+
+        <!-- 右盒子 -->
+        <div id="right" class="fr">
+
+            <!-- 标题 -->
+            <p>新书畅销榜</p>
+            <!-- 列表 -->
+            <ul>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix">
+                        <span class="fl one col">1</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 hide">
+                        <span class="col">1</span>
+                        <span class="fr">就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one col">2</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span class="col">2</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one col">3</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span class="col">3</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">4</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>4</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">5</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>5</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">6</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>6</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">7</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>7</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 服装 -->
+    <div id="clothing" class="container clearfix floor1">
+        <!-- 标题 -->
+        <div class="title2">
+            服装
+            <ul class="fr clearfix">
+                <li class="active fl">女装内衣</li>
+                <li class="fl">热销男装</li>
+                <li class="fl">精品鞋靴</li>
+            </ul>
+        </div>
+
+        <!-- 内容 -->
+        <div class="menu clearfix">
+            <!-- 左侧盒子 -->
+            <div class="one fl">
+                <img src="images/demo_commonPic.jpg" alt="">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">女包</a>
+                    </li>
+                    <li>
+                        <a href="#">防晒品</a>
+                    </li>
+                    <li>
+                        <a href="#">短裤</a>
+                    </li>
+                    <li>
+                        <a href="#">冰丝内裤</a>
+                    </li>
+                    <li>
+                        <a href="#">男包</a>
+                    </li>
+                    <li>
+                        <a href="#">功能箱包</a>
+                    </li>
+                    <li>
+                        <a href="#">蕾丝衬衫</a>
+                    </li>
+                    <li>
+                        <a href="#">奢侈品</a>
+                    </li>
+                    <li>
+                        <a href="#">男鞋</a>
+                    </li>
+                    <li>
+                        <a href="#">女包</a>
+                    </li>
+                    <li>
+                        <a href="#">女鞋</a>
+                    </li>
+                    <li>
+                        <a href="#">全部分类></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 右侧盒子 -->
+            <div class="two fr clearfix">
+                <!-- 轮播盒子 -->
+                <div class="lunbo fl">
+                    <div class="banner" id="banner3" style="margin: 0 auto;">
+                        <div class="banner-view"></div>
+                        <div class="banner-btn"></div>
+                        <div class="banner-number"></div>
+                        <div class="banner-progres"></div>
+                    </div>
+                    <script type="text/javascript">
+                        var banner3 = new FragmentBanner({
+                            container: "#banner3",//选择容器 必选
+                            imgs: ['./images/ppt2_05.jpg'],//图片集合 必选
+                            size: {
+                                width: 428,
+                                height: 332
+                            },//容器的大小 可选
+                            //行数与列数 可选
+                            grid: {
+                                line: 12,
+                                list: 14
+                            },
+                            index: 0,//图片集合的索引位置 可选
+                            type: 2,//切换类型 1 ， 2 可选
+                            boxTime: 3000,//小方块来回运动的时长 可选
+                            fnTime: 5000//banner切换的时长 可选
+                        });
+                    </script>
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="four fl">
+                    <img src="images/index11_08.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 选项卡后两页 -->
+        <div class="menu" style="display: none;background: aqua;">
+            <h1 style="font-size: 40px;">这是男装</h1>
+        </div> 
+        <div class="menu" style="display: none;background: aqua;">
+            <h1 style="font-size: 40px;">这是鞋靴</h1>
+        </div>
+
+        <!-- logo -->
+        <div class="logo clearfix">
+            <img src="images/logo13_11.jpg" alt="">
+            <img src="images/logo13_12.jpg" alt="">
+            <img src="images/logo13_13.jpg" alt="">
+            <img src="images/logo13_14.jpg" alt="">
+            <img src="images/logo13_15.jpg" alt="">
+            <img src="images/logo13_16.jpg" alt="">
+            <img src="images/logo13_17.jpg" alt="">
+            <img src="images/logo13_18.jpg" alt="">
+            <img src="images/logo13_19.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 户外运动 -->
+    <div id="sport" class="container clearfix floor1">
+        <!-- 标题 -->
+        <div class="title2">
+            户外运动
+            <ul class="fr clearfix">
+                <li class="active fl">国际名品</li>
+                <li class="fl">户外装备</li>
+                <li class="fl">运动潮流</li>
+            </ul>
+        </div>
+
+        <!-- 内容 -->
+        <div class="menu clearfix">
+            <!-- 左侧盒子 -->
+            <div class="one fl">
+                <img src="images/demo_commonPic.jpg" alt="">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">女包</a>
+                    </li>
+                    <li>
+                        <a href="#">防晒品</a>
+                    </li>
+                    <li>
+                        <a href="#">短裤</a>
+                    </li>
+                    <li>
+                        <a href="#">冰丝内裤</a>
+                    </li>
+                    <li>
+                        <a href="#">男包</a>
+                    </li>
+                    <li>
+                        <a href="#">功能箱包</a>
+                    </li>
+                    <li>
+                        <a href="#">蕾丝衬衫</a>
+                    </li>
+                    <li>
+                        <a href="#">奢侈品</a>
+                    </li>
+                    <li>
+                        <a href="#">男鞋</a>
+                    </li>
+                    <li>
+                        <a href="#">女包</a>
+                    </li>
+                    <li>
+                        <a href="#">女鞋</a>
+                    </li>
+                    <li>
+                        <a href="#">全部分类></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 右侧盒子 -->
+            <div class="two fr clearfix">
+                <!-- 轮播盒子 -->
+                <div class="lunbo fl">
+                    <div class="banner" id="banner4" style="margin: 0 auto;">
+                        <div class="banner-view"></div>
+                        <div class="banner-btn"></div>
+                        <div class="banner-number"></div>
+                        <div class="banner-progres"></div>
+                    </div>
+                    <script type="text/javascript">
+                        var banner4 = new FragmentBanner({
+                            container: "#banner4",//选择容器 必选
+                            imgs: ['./images/ppt2_05.jpg'],//图片集合 必选
+                            size: {
+                                width: 428,
+                                height: 332
+                            },//容器的大小 可选
+                            //行数与列数 可选
+                            grid: {
+                                line: 12,
+                                list: 14
+                            },
+                            index: 0,//图片集合的索引位置 可选
+                            type: 2,//切换类型 1 ， 2 可选
+                            boxTime: 3000,//小方块来回运动的时长 可选
+                            fnTime: 5000//banner切换的时长 可选
+                        });
+                    </script>
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="four fl">
+                    <img src="images/index11_08.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 选项卡后两页 -->
+        <div class="menu" style="display: none;background: aqua;">
+            <h1 style="font-size: 40px;">户外装备</h1>
+        </div> 
+        <div class="menu" style="display: none;background: pink;">
+            <h1 style="font-size: 40px;">运动潮流</h1>
+        </div>
+        <!-- logo -->
+        <div class="logo clearfix">
+            <img src="images/logo13_11.jpg" alt="">
+            <img src="images/logo13_12.jpg" alt="">
+            <img src="images/logo13_13.jpg" alt="">
+            <img src="images/logo13_14.jpg" alt="">
+            <img src="images/logo13_15.jpg" alt="">
+            <img src="images/logo13_16.jpg" alt="">
+            <img src="images/logo13_17.jpg" alt="">
+            <img src="images/logo13_18.jpg" alt="">
+            <img src="images/logo13_19.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 童装 童鞋 婴儿装 -->
+    <div id="fuzhuang" class="container clearfix floor1">
+        <!-- 标题 -->
+        <div class="title2">
+            童装 童鞋 婴儿装
+            <ul class="fr clearfix">
+                <li class="active fl">儿童服装</li>
+                <li class="fl">婴儿装</li>
+                <li class="fl">小潮童鞋</li>
+            </ul>
+        </div>
+
+        <!-- 内容 -->
+        <div class="menu clearfix">
+            <!-- 左侧盒子 -->
+            <div class="one fl">
+                <img src="images/demo_commonPic.jpg" alt="">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">女包</a>
+                    </li>
+                    <li>
+                        <a href="#">防晒品</a>
+                    </li>
+                    <li>
+                        <a href="#">短裤</a>
+                    </li>
+                    <li>
+                        <a href="#">冰丝内裤</a>
+                    </li>
+                    <li>
+                        <a href="#">男包</a>
+                    </li>
+                    <li>
+                        <a href="#">功能箱包</a>
+                    </li>
+                    <li>
+                        <a href="#">蕾丝衬衫</a>
+                    </li>
+                    <li>
+                        <a href="#">奢侈品</a>
+                    </li>
+                    <li>
+                        <a href="#">男鞋</a>
+                    </li>
+                    <li>
+                        <a href="#">女包</a>
+                    </li>
+                    <li>
+                        <a href="#">女鞋</a>
+                    </li>
+                    <li>
+                        <a href="#">全部分类></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 右侧盒子 -->
+            <div class="two fr clearfix">
+                <!-- 轮播盒子 -->
+                <div class="lunbo fl">
+                    <div class="banner" id="banner5" style="margin: 0 auto;">
+                        <div class="banner-view"></div>
+                        <div class="banner-btn"></div>
+                        <div class="banner-number"></div>
+                        <div class="banner-progres"></div>
+                    </div>
+                    <script type="text/javascript">
+                        var banner5 = new FragmentBanner({
+                            container: "#banner5",//选择容器 必选
+                            imgs: ['./images/ppt2_05.jpg'],//图片集合 必选
+                            size: {
+                                width: 428,
+                                height: 332
+                            },//容器的大小 可选
+                            //行数与列数 可选
+                            grid: {
+                                line: 12,
+                                list: 14
+                            },
+                            index: 0,//图片集合的索引位置 可选
+                            type: 2,//切换类型 1 ， 2 可选
+                            boxTime: 3000,//小方块来回运动的时长 可选
+                            fnTime: 5000//banner切换的时长 可选
+                        });
+                    </script>
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="three fl">
+                    <img src="images/index100_05.jpg" alt="">
+                </div>
+                <div class="four fl">
+                    <img src="images/index11_08.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+                <div class="five fl">
+                    <img src="images/index100_11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 选项卡后两页 -->
+        <div class="menu" style="display: none;background: aqua;">
+            <h1 style="font-size: 40px;">婴儿装</h1>
+        </div> 
+        <div class="menu" style="display: none;background: rgb(245, 202, 138);">
+            <h1 style="font-size: 40px;">小潮童鞋</h1>
+        </div>
+        
+        <!-- logo -->
+        <div class="logo clearfix">
+            <img src="images/logo13_11.jpg" alt="">
+            <img src="images/logo13_12.jpg" alt="">
+            <img src="images/logo13_13.jpg" alt="">
+            <img src="images/logo13_14.jpg" alt="">
+            <img src="images/logo13_15.jpg" alt="">
+            <img src="images/logo13_16.jpg" alt="">
+            <img src="images/logo13_17.jpg" alt="">
+            <img src="images/logo13_18.jpg" alt="">
+            <img src="images/logo13_19.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 家居日用 -->
+    <div id="jiaju" class="container clearfix floor1">
+        <!-- 标题 -->
+        <div class="title2">
+            家居日用
+        </div>
+        <!-- 左盒子 -->
+        <div class="left fl">
+            <img src="images/index21_05.jpg" alt="">
+        </div>
+        <!-- 右盒子 -->
+        <div class="right fl clearfix">
+            <div class="top fl">
+                <img src="images/index22_05.jpg" alt="">
+            </div>
+            <div class="top fl">
+                <img src="images/index22_05.jpg" alt="">
+            </div>
+            <div class="top fl">
+                <img src="images/index22_05.jpg" alt="">
+            </div>
+            <div class="top fl">
+                <img src="images/index22_05.jpg" alt="">
+            </div>
+            <div class="botton fl">
+                <img src="images/index23_08.jpg" alt="">
+            </div>
+            <div class="botton fl">
+                <img src="images/index23_08.jpg" alt="">
+            </div>
+            <div class="botton fl">
+                <img src="images/index23_08.jpg" alt="">
+            </div>
+            <div class="botton fl">
+                <img src="images/index23_08.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 推广商品 -->
+    <div id="prc" class="container clearfix">
+        <!-- 标题 -->
+        <div class="title3 clearfix">
+            <span>推广商品</span>
+            <div class="fr"></div>
+            <div class="fr active"></div>
+        </div>
+        <!-- 内容 -->
+
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+        <div class="fl photo">
+            <div>
+                <img src="images/index25_12.jpg" alt="">
+                <h1>Pigeon法国制奶嘴，无毒天然乳胶</h1>
+                <span class="col">￥:189</span>
+                <p>已有
+                    <span class="col">988</span>条评论</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="top">
+            <div class="center">
+                <img src="images/222_11.png" alt="">
+                <img src="images/222_13(1).png" alt="">
+                <img src="images/222_15.png" alt="">
+                <img src="images/222_17.png" alt="">
+            </div>
+        </div>
+        <!-- 列表 -->
+        <div class="list clearfix container">
+            <ul class="fl">
+                <li>
+                    <a href="#">购物指南</a>
+                </li>
+                <li>
+                    <a href="#">购物流程</a>
+                </li>
+                <li>
+                    <a href="#">发票制度</a>
+                </li>
+                <li>
+                    <a href="#">账户管理</a>
+                </li>
+                <li>
+                    <a href="#">会员优惠</a>
+                </li>
+            </ul>
+            <ul class="fl">
+                <li>
+                    <a href="#">支付方式</a>
+                </li>
+                <li>
+                    <a href="#">货到付款</a>
+                </li>
+                <li>
+                    <a href="#">网上支付</a>
+                </li>
+                <li>
+                    <a href="#">礼品卡支付</a>
+                </li>
+                <li>
+                    <a href="#">银行转账</a>
+                </li>
+            </ul>
+            <ul class="fl">
+                <li>
+                    <a href="#">订单服务</a>
+                </li>
+                <li>
+                    <a href="#">订单配送查询</a>
+                </li>
+                <li>
+                    <a href="#">订单状态说明</a>
+                </li>
+                <li>
+                    <a href="#">自助取消订单</a>
+                </li>
+                <li>
+                    <a href="#">自助修改订单</a>
+                </li>
+            </ul>
+            <ul class="fl">
+                <li>
+                    <a href="#">退换货</a>
+                </li>
+                <li>
+                    <a href="#">退换货政策</a>
+                </li>
+                <li>
+                    <a href="#">自助申请退换货</a>
+                </li>
+                <li>
+                    <a href="#">自助申请退换货</a>
+                </li>
+                <li>
+                    <a href="#">自助申请退换货</a>
+                </li>
+            </ul>
+            <ul class="fl">
+                <li>
+                    <a href="#">商家服务</a>
+                </li>
+                <li>
+                    <a href="#">商家中心</a>
+                </li>
+                <li>
+                    <a href="#">运营服务</a>
+                </li>
+                <li>
+                    <a href="#">加入唯品会</a>
+                </li>
+            </ul>
+            <div class="logo2 fr">
+                <img src="images/logo_00.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="bot">
+            <a href="#">公司简介</a>|
+            <a href="#">Investor Relations</a>|
+            <a href="#">网站联盟</a>|
+            <a href="#">乐购招商</a>|
+            <a href="#">机构销售</a>|
+            <a href="#">手机乐购</a>|
+            <a href="#">官方Blog</a>|
+            <a href="#">热词搜索</a>
+        </div>
+        <div class="last">
+            <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- 回到顶部 -->
+    <div class="totop">
+        <img src="images/gototop_05.jpg" alt="">
+    </div>
+
+    <!-- 领券二维码 -->
+    <div id="preferential">
+        <img src="images/two_30.jpg" alt="">
+        <img src="images/two_31.jpg" alt="">
+        <img src="images/two_33.jpg" alt="" class="hide">
+        <img src="images/two_32.jpg" alt="">
+    </div>
+
+    
+
+        <!-- 顶部栏 -->
+        <div class="db" class="container">
+            <input type="text" placeholder="创意文具">
+            <button>搜索</button>
+        </div>
+</body>
+
+</html>

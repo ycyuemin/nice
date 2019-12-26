@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topnav">
+            <!-- 版心 -->
+            <div class="container clearfix">
+                <!-- 左边文字 -->
+                <div class="fl">legochina.cn</div>
+                <!-- 右边文字 -->
+                <div class="fr">欢迎光临
+                    <a href="index.html">乐购</a>，请
+                    <a href="sign.html">登陆</a> \
+                    <a href="register.html">注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- logo -->
+        <div class="shopheader container clearfix">
+            <div class="logo">
+                <img src="images/register.jpg" alt="">
+            </div>
+            <span>欢迎登陆</span>
+            <span class="logoWen fr">已有账号,请&ensp;<a href="sign.html">登录</a></span>
+        </div>
+
+        <!-- 注册页面 -->
+        <div class="bigbox">
+            <div class="container box">
+                    <form action="save_reg.php" method="get" class="clearfix">
+                            <span class="clearfix three">用户名<input class="fr" type="text" name="username" id="username" placeholder="您的账户名和登录名"></span>
+                            <span class="clearfix three">设置密码<input class="fr" type="password" name="password" id="pwd" placeholder="建议设置两种字符密码"></span>
+                            <span class="clearfix three">确认密码<input class="fr" type="password" name="password2" id="pwd2" placeholder="再次输入密码"></span>
+                            <span class="clearfix three">中国+86<input class="fr" type="text" name="iphone" id="mobile" placeholder="建议使用常用手机号"></span>
+                            <span class="clearfix three">验证码<input class="fr one" type="text" name="yanzheng" id="vcode" placeholder="请输入验证码"></span> 
+                            <span class="clearfix three">手机验证码<input class="fr two" type="text" name="ma" placeholder="输入手机验证码"> <span class="fr"><a href="#">获取验证码</a></span></span>
+                           <!-- 协议 -->
+                            <input type="checkbox" class="xieyi"><span>我已阅读并同意<span><a href="#" class="col">《京东用户注册协议》</a></span></span>
+                            <!-- 立即注册 -->
+                            <p class="reg"><a href="#">立即注册</a></p>
+                        </form>
+            </div>
+        </div>
+         <!-- 尾部 -->
+    <div class="bot">
+            <a href="#">公司简介</a>|
+             <a href="#">Investor Relations</a>|
+             <a href="#">网站联盟</a>|
+             <a href="#">乐购招商</a>|
+             <a href="#">机构销售</a>|
+             <a href="#">手机乐购</a>|
+             <a href="#">官方Blog</a>|
+             <a href="#">热词搜索</a>
+     </div>
+     <div class="last">
+         <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+     </div>
+</body>
+</html>

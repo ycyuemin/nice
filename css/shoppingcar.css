@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/* 顶部导航左文字 */
+.topnav .fl{
+    font-size: 14px;
+    line-height: 28px;
+    color: #dddddd;
+    text-indent: 260px;
+}
+/* logo */
+.shopheader>.logo{
+    width: 260px;
+    height: 110px;
+    background: #f60;
+    margin-top:-28px; 
+    float:left;
+	text-align:center;
+	box-sizing:border-box;
+}
+/* 配送 */
+.shopheader>.peisong{
+    width: 220px;
+    height: 18px;
+    margin-top: -34px;
+}
+/* 全部商品 */
+.shoping{
+    margin-top: 20px;
+}
+.shoping>.tit{
+    font-size: 20px;
+}
+/* 全选 */
+.shoping>.all{
+    height: 60px;
+    background: #f2f2f2;
+    color: #808080;
+    font-size: 16px;
+    margin: 6px 0px 16px 0px;
+    line-height: 60px;
+}
+/* 左文字 */
+.shoping .checkb{
+    margin-top: 20px;
+    margin-left: 22px;
+    width: 20px;
+    height: 20px;
+}
+.shoping>.all>span:nth-child(2){
+    margin-right: 180px;
+}
+.shoping>.all>span:nth-child(3){
+    margin-right: 346px;
+}
+.shoping>.all>span:nth-child(4){
+    margin-right: 128px;
+}
+.shoping>.all>span:nth-child(5){
+    margin-right: 114px;
+}
+.shoping>.all>span:nth-child(6){
+    margin-right: 90px;
+}
+/* 中间盒子 */
+.shoping>.center{
+    margin-top: 18px;
+    height: 424px;
+    border-top: 6px solid #dfdfdf;
+    border-bottom: 2px solid #dfdfdf;
+}
+.shoping>.center>.one{
+    height: 204px;
+    border-bottom: 2px solid #dfdfdf;
+}
+.shoping>.center>.one:last-child{
+    border: 0px;
+}
+/* 书 */
+.shoping>.center>.one>.tu{
+    width: 160px;
+    height: 160px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 1px solid #dfdfdf;
+}
+.shoping>.center>.one>.tu>img{
+    margin-top: 5px;
+    margin-left: 24px;
+}
+.shoping>.center>.one>.fl{
+    margin-top: 20px;
+    margin-left: 30px;  
+    font-size: 16px;  
+    color: #4c4c4c;
+}
+.shoping>.center>.one>.yi{
+    margin-right: 212px;
+}
+.shoping>.center>.one>.er{
+    margin-right: 76px;
+}
+.shoping>.center>.one>.san{
+    width: 122px;
+    height: 22px;
+    margin-right: 26px;    
+}
+.shoping>.center>.one>.san>p{
+    width: 122px;
+    height: 44px;
+    margin-top: 10px;
+    display: inline-block;
+}
+input {
+    width: 28px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+input:nth-child(2){
+    width: 48px;
+    height: 30px;
+}
+.shoping>.center>.one>.si{
+    font-size: 16px; 
+    font-weight: bold;
+    margin-right: 46px;        
+}
+.shoping>.center>.one>.wu{
+    font-size: 16px; 
+    margin-top: 20px;
+}
+.shoping>.center>.one>.wu>p>a{
+    line-height: 32px;
+    color: #4c4c4c;
+}
+/* 全选，删除 */
+.shoping>.btu{
+    height: 60px;
+    background: #f2f2f2;
+    margin-top: 30px;
+    color: #808080;
+    font-size: 16px;
+    line-height: 60px;
+}
+.shoping>.btu>span:nth-child(2){
+    margin-right: 34px;
+}
+.shoping>.btu>span:nth-child(3){
+    margin-right: 514px;
+}
+.shoping>.btu>span:nth-child(4){
+    margin-right: 52px;
+}
+.shoping>.btu>span:nth-child(5){
+    margin-right: 48px;
+}
+.shoping>.btu>span:nth-child(6){
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    width: 128px;
+    height: 60px;
+    background: #f60;
+}
+.shoping>.btu>span:nth-child(6)>a{
+     color: #fff;
+}
+
+/* 猜你喜欢 */
+/* 标题 */
+.cailike{
+    margin-top: 36px;
+}
+.cailike>.tit{
+   width: 124px;
+    height: 47px;
+    line-height: 47px;
+    background: #f60;
+    font-size: 24px;
+    text-align: center;
+}
+.cailike>.tit>a{
+    color: #fff;
+}
+/* 内容 */
+.cailike>.likeMenu{
+    height: 260px;
+    border-top: 6px solid #f60;
+}
+/* 书 */
+.cailike .pic{
+    width: 1200px;
+}
+
+.cailike .pic>.bookPics{
+    width: 240px;
+    height: 256px;
+}
+.cailike .pic>.bookPics:hover{
+    background: #f2f2f2;
+}
+.cailike .pic>.bookPics>.bookPh{
+    margin: 10px 45px 0px 45px;
+}
+.cailike .pic>.bookPics>p>a{
+    color: #333333;
+    margin-left: 10px;
+}
+.cailike .pic>.bookPics .col{
+    margin-left: 10px;   
+}
+/* 精灵图 */
+
+.cailike .pic>.bookPics .tu{
+    width: 114px;
+    height: 20px;
+    background: url(../images/star_small.gif) no-repeat 1px -20px;
+} 
+.cailike .pic>.bookPics .bookPrice{
+    font-size: 18px;
+}
+.cailike .pic>.bookPics .bookPrice .shanchu{
+    color: #c0c0c0;
+    margin-left: 24px;
+}
+
+/* 插图 */
+.photo{
+    margin-top: 90px;
+}
+

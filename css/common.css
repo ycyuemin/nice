@@ -1,0 +1,193 @@
+/* 版心 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 浮动 */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/* 清除浮动 */
+.clearfix:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+.col{
+    color: #f60;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* 顶部 */
+/* 顶部导航栏 */
+.topnav{
+    width: 100%;
+    height: 28px;
+    background: #101010;
+}
+/* 左边文字 */
+.topnav .fl{
+    font-size: 14px;
+    line-height: 28px;
+    color: #dddddd;
+    text-indent: 200px;
+}
+/* 右边文字 */
+.topnav .fr{
+    font-size: 14px;
+    color: #dddddd;
+    line-height: 28px;
+}
+.topnav .fr>a{
+    color: #f60;
+}
+/* logo */
+.header>.logo{
+    width: 200px;
+    height: 112px;
+    border-bottom: 7px solid #93d470;
+    background: #f60;
+    margin-top:-28px; 
+    float:left;
+	text-align:center;
+	box-sizing:border-box;
+}
+.header>.logo>p{
+    text-align: left;
+    text-indent: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 搜索框 */
+.search{
+    text-align: right;
+    padding-top: 4px;
+}
+.search form{
+    display: inline-block;
+    position: relative;
+    margin-right:36px;
+}
+.search input{
+	box-sizing:border-box;
+	height:36px;
+    width:440px;
+    font-size: 14px;
+	border:2px solid #f60;
+	padding-left:6px;
+}
+.search button{
+	width:48px;
+	height:32px;
+	background:url(../images/search.jpg);
+	border:0;
+	position:absolute;
+	left:392px;
+    top:2px;
+	text-indent:-9999px;
+}
+.search>a{
+	height:34px;
+	font:14px/34px "微软雅黑";
+    float:right;
+    text-decoration: none;
+}
+.search>a.shopping{
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    font-size: 16px;    
+    padding-right: 10px;
+    background: #f60 url(../images/cart.jpg) no-repeat 6px center;
+}
+.search>a.myorder{
+    width: 98px;
+    height: 34px;
+    background: #ebebeb;
+    color:#808080;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+/* 导航栏 */
+.nav{
+    text-align: left;
+    padding-top:20px;
+}
+.nav>a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #101010;
+    margin-left: 35px;
+    text-decoration: none;
+}
+
+/* 底部 */
+
+.foot{
+    border-top: 6px solid #f60;
+    height: 466px;
+    /* margin-top: 10px; */
+}
+.foot>.top{
+    height: 94px;
+    background: #f2f2f2;
+}
+.foot>.top>.center{
+    width: 788px;
+    margin: 0 auto;
+    
+}
+.foot>.top>.center>img{
+    margin-top: 24px;
+    margin-right: 62px;
+}
+/* 列表 */
+.foot>.list{
+    width:1070px;
+    height: 184px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.foot>.list>ul>li{
+    text-align: center;
+    margin:0px 0px 0px 100px;
+}
+.foot>.list>ul>li>a{
+    line-height: 30px;
+    color: #4d4d4d;
+    font-size: 14px;
+}
+.foot>.bot{
+    width:788px;
+    margin: 0 auto;
+}
+.foot>.bot>a{
+    color: #4d4d4d;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 14px;
+}
+.foot>.last>p{
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+

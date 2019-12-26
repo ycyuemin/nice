@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品列表</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <script src="js/banner.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/product.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topnav">
+        <!-- 版心 -->
+        <div class="container clearfix">
+            <!-- 左边文字 -->
+            <div class="fl">legochina.cn</div>
+            <!-- 右边文字 -->
+            <div class="fr">欢迎光临
+                <a href="index.html">乐购</a>，请
+                <a href="sign.html">登陆</a> \
+                <a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- logo -->
+    <div class="header container clearfix">
+        <div class="logo">
+            <img src="images/02-list-logo_02.jpg" alt="">
+            <!-- <p>全部商品分类</p> -->
+        </div>
+        <!-- 搜索 -->
+        <div class="search clearfix">
+            <form>
+                <input type="text" name="keywords" placeholder="创意文具">
+                <button type="submit">搜索</button>
+            </form>
+            <a href="#" class="myorder">我的订单</a>
+            <a href="shoppingcar.html" class="shopping">购物车 3</a>
+
+            <!-- 导航栏 -->
+            <div class="nav">
+                <a href="#">图书</a>
+                <a href="#">电子书</a>
+                <a href="#">原创文学</a>
+                <a href="#">服装</a>
+                <a href="#">运动户外</a>
+                <a href="#">孕婴童</a>
+                <a href="#">家居</a>
+                <a href="#">创意文具</a>
+                <a href="#">地方特产</a>
+                <a href="#">海外购</a>
+                <a href="#">电器城</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播大盒子 -->
+    <div class="menu container clearfix">
+        <!-- 轮播盒子 -->
+        <div class="lunbo clearfix fl">
+            <div class="banner fl">
+                <div class="banner" id="banner6" style="margin: 0 auto;">
+                    <div class="banner-view"></div>
+                    <div class="banner-btn"></div>
+                    <div class="banner-number"></div>
+                    <div class="banner-progres"></div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var banner6 = new FragmentBanner({
+                    container: "#banner6",//选择容器 必选
+                    imgs: ['./images/banner01.jpg', './images/banner2.jpg', './images/banner3.jpg', './images/banner4.jpg', './images/banner5.jpg', './images/banner6.jpg'],//图片集合 必选
+                    size: {
+                        width: 1000,
+                        height: 430
+                    },//容器的大小 可选
+                    //行数与列数 可选
+                    grid: {
+                        line: 12,
+                        list: 14
+                    },
+                    index: 0,//图片集合的索引位置 可选
+                    type: 2,//切换类型 1 ， 2 可选
+                    boxTime: 3000,//小方块来回运动的时长 可选
+                    fnTime: 5000//banner切换的时长 可选
+                });
+            </script>
+        </div>
+        <!-- 右侧盒子 -->
+        <div class="right fr">
+            <div>
+                <p>热卖畅销</p>
+            </div>
+            <ul>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 on clearfix ">
+                        <span class="fr one">1</span>
+                        <img class="fl two" src="images/santi.jpg" alt="">
+                        <span class="fl three">《三体》刘慈欣 一场科幻的史诗 风暴</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 clearfix no">
+                        <span class="fr one">1</span>
+                        <img class="fl" src="images/index08_05.jpg" alt="">
+                        <p class="fr three">《从你的全世界路过》</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix no">
+                        <span class="fr one">2</span>
+                        <img class="fl two" src="images/santi.jpg" alt="">
+                        <span class="fl three">《三体》刘慈欣 一场科幻的史诗 风暴</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 clearfix">
+                        <span class="fr one">2</span>
+                        <img class="fl" src="images/index08_05.jpg" alt="">
+                        <p class="fr three">《从你的全世界路过》</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix no">
+                        <span class="fr one">3</span>
+                        <img class="fl two" src="images/santi.jpg" alt="">
+                        <span class="fl three">《三体》刘慈欣 一场科幻的史诗 风暴</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 clearfix">
+                        <span class="fr one">3</span>
+                        <img class="fl" src="images/index08_05.jpg" alt="">
+                        <p class="fr three">《从你的全世界路过》</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix no">
+                        <span class="fr one">4</span>
+                        <img class="fl two" src="images/santi.jpg" alt="">
+                        <span class="fl three">《三体》刘慈欣 一场科幻的史诗 风暴</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 clearfix">
+                        <span class="fr one">4</span>
+                        <img class="fl" src="images/index08_05.jpg" alt="">
+                        <p class="fr three">《从你的全世界路过》</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix no">
+                        <span class="fr one">5</span>
+                        <img class="fl two" src="images/santi.jpg" alt="">
+                        <span class="fl three">《三体》刘慈欣 一场科幻的史诗 风暴</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 clearfix">
+                        <span class="fr one">5</span>
+                        <img class="fl" src="images/index08_05.jpg" alt="">
+                        <p class="fr three">《从你的全世界路过》</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix no">
+                        <span class="fr one">6</span>
+                        <img class="fl two" src="images/santi.jpg" alt="">
+                        <span class="fl three">《三体》刘慈欣 一场科幻的史诗 风暴</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 clearfix">
+                        <span class="fr one">6</span>
+                        <img class="fl" src="images/index08_05.jpg" alt="">
+                        <p class="fr three">《从你的全世界路过》</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix no">
+                        <span class="fr one">7</span>
+                        <img class="fl two" src="images/santi.jpg" alt="">
+                        <span class="fl three">《三体》刘慈欣 一场科幻的史诗 风暴</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 clearfix">
+                        <span class="fr one">7</span>
+                        <img class="fl" src="images/index08_05.jpg" alt="">
+                        <p class="fr three">《从你的全世界路过》</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 插图 -->
+    <div class="photo container">
+        <img src="images/moshoushijie.jpg" alt="">
+    </div>
+
+    <!-- 乐购图书折扣区 -->
+    <div class="container book clearfix">
+        <!-- 标题 -->
+        <div class="title2">
+            <div>乐购 图书 折扣区</div>
+        </div>
+        <!-- 内容 -->
+        <div class="fl pic clearfix">
+            <div class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-6zhe_17.png" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:30</span>
+                    <del class="shanchu on">￥:46</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-6zhe_17.png" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:30</span>
+                    <del class="shanchu">￥:46</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-6zhe_17.png" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:30</span>
+                    <del class="shanchu">￥:46</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-6zhe_17.png" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:30</span>
+                    <del class="shanchu">￥:46</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-yingzi_14.jpg" alt="">
+                </div>
+                <img src="images/02-6zhe_17.png" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:30</span>
+                    <del class="shanchu">￥:46</del>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新书上架 -->
+    <div class="newBook container clearfix">
+        <!-- 标题盒子 -->
+        <div class="title">
+            <p>
+                <span>新</span>书上架</p>
+        </div>
+        <!-- 左盒子 -->
+        <div class="left clearfix fl">
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/dashuju.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/dashuju.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/dashuju.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/dashuju.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/dashuju.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+        </div>
+        <!-- 右盒子 -->
+        <div class="right fr">
+            <!-- 标题 -->
+            <p>主编推荐</p>
+            <!-- 列表 -->
+            <ul>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix">
+                        <span class="fl one col">1</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2 hide">
+                        <span class="col">1</span>
+                        <span class="fr">就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one col">2</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span class="col">2</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one col">3</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span class="col">3</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">4</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>4</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">5</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>5</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">6</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>6</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <!-- 样式1 -->
+                    <div class="style1 clearfix hide">
+                        <span class="fl one">7</span>
+                        <img class="fl two" src="images/index08_05.jpg" alt="">
+                        <span class="fl three">从你的世界路过入选央视“2014中国好书”的80后作品！ 十年华语畅销小说，王家卫陈国富倾力推荐， 1500万次转发，超4亿次阅读</span>
+                    </div>
+                    <!-- 样式2 -->
+                    <div class="style2">
+                        <span>7</span>
+                        <span>就喜欢你看不惯我 又干不到我的样子</span>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 独家提供 -->
+    <div id="only" class="container clearfix">
+        <!-- 标题盒子 -->
+        <div class="productTitle clearfix fl">
+            <p class="fl">
+                <span>独</span>家提供
+            </p>
+            <ul class="clearfix fr">
+                <li class="fl active">货币金融</li>
+                <li class="fl">社会文学</li>
+                <li class="fl">科学技术</li>
+                <li class="fl">儿童文学</li>
+                <li class="fl">教学参辅</li>
+                <li class="fl">生活</li>
+                <li class="fl">小说</li>
+            </ul>
+        </div>
+        
+        <ul class="fl pic clearfix" id="lun">
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+            <li class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </li>
+        </ul>
+        
+        <!-- 选项卡后两页 -->
+        <ul  id="lun" class="fl pic clearfix" style="display: none;background: rgb(245, 202, 138);">
+            <h1>人间忽晚</h1>
+        </ul>
+        <ul  id="lun" class="fl pic clearfix" style="display: none;background:  red;">
+            <h1>山河已秋</h1>
+        </ul>
+        <ul  id="lun" class="fl pic clearfix" style="display: none;background: aqua;">
+            <h1>随便写写</h1>
+        </ul>
+        <ul  id="lun" class="fl pic clearfix" style="display: none;background: pink;">
+            <h1>做个效果</h1>
+        </ul>
+        <ul  id="lun" class="fl pic clearfix" style="display: none;background: yellow;">
+            <h1>大概意思下</h1>
+        </ul>
+        <ul  id="lun" class="fl pic clearfix" style="display: none;background: palevioletred;">
+            <h1>哦豁，没得了</h1>
+        </ul>
+       
+        <ul class="page clearfix fl">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+        
+    </div>
+
+    <!-- 猜你喜欢 -->
+    <div class="like container">
+        <!-- 标题 -->
+        <div class="title">
+            <p>
+                <span>猜</span>你喜欢</p>
+        </div>
+        <!-- 内容 -->
+        <div class="menu">
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/jinrong.jpg" alt="">
+                </div>
+                <p>
+                    <a href="#">查理 斯密斯</a>
+                </p>
+                <p class="chu">中国邮电出版社</p>
+                <p class="bookPrice">
+                    <span class="col">￥:49</span>
+                    <del class="shanchu">￥:79</del>
+                </p>
+            </div>
+        </div>
+        <!-- 下边盒子 -->
+        <div class="xia clearfix">
+            <div class="tupian clearfix fl">
+                <div class="fl">
+                    <p class="one">人文社科精选</p>
+                    <p class="two">书好价优</p>
+                    <p class="three">满三折折上7折</p>
+                </div>
+                <img class="fr" src="images/xinlixue.png" alt="">
+            </div>
+            <div class="tupian clearfix fl">
+                <div class="fl">
+                    <p class="one">人文社科精选</p>
+                    <p class="two">书好价优</p>
+                    <p class="three">满三折折上7折</p>
+                </div>
+                <img class="fr" src="images/xinlixue.png" alt="">
+            </div>
+            <div class="tupian clearfix fl">
+                <div class="fl">
+                    <p class="one">人文社科精选</p>
+                    <p class="two">书好价优</p>
+                    <p class="three">满三折折上7折</p>
+                </div>
+                <img class="fr" src="images/xinlixue.png" alt="">
+            </div>
+            <div class="tupian clearfix fl">
+                <div class="fl">
+                    <p class="one">人文社科精选</p>
+                    <p class="two">书好价优</p>
+                    <p class="three">满三折折上7折</p>
+                </div>
+                <img class="fr" src="images/xinlixue.png" alt="">
+            </div>
+            <div class="tupian clearfix fl">
+                <div class="fl">
+                    <p class="one">人文社科精选</p>
+                    <p class="two">书好价优</p>
+                    <p class="three">满三折折上7折</p>
+                </div>
+                <img class="fr" src="images/xinlixue.png" alt="">
+            </div>
+            <div class="tupian clearfix fl">
+                <div class="fl">
+                    <p class="one">人文社科精选</p>
+                    <p class="two">书好价优</p>
+                    <p class="three">满三折折上7折</p>
+                </div>
+                <img class="fr" src="images/xinlixue.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 插图 -->
+    <div class="photo container">
+            <img src="images/moshoushijie.jpg" alt="">
+        </div>
+
+        <!-- 底部 -->
+        <div class="foot">
+                <div class="top">
+                    <div class="center">
+                        <img src="images/222_11.png" alt="">
+                        <img src="images/222_13(1).png" alt="">
+                        <img src="images/222_15.png" alt="">
+                        <img src="images/222_17.png" alt="">
+                    </div>
+                </div>
+                <!-- 列表 -->
+                <div class="list clearfix container">
+                    <ul class="fl">
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">发票制度</a></li>
+                        <li><a href="#">账户管理</a></li>
+                        <li><a href="#">会员优惠</a></li>
+                    </ul>
+                    <ul class="fl">
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">货到付款</a></li>
+                        <li><a href="#">网上支付</a></li>
+                        <li><a href="#">礼品卡支付</a></li>
+                        <li><a href="#">银行转账</a></li>
+                    </ul>
+                    <ul class="fl">
+                        <li><a href="#">订单服务</a></li>
+                        <li><a href="#">订单配送查询</a></li>
+                        <li><a href="#">订单状态说明</a></li>
+                        <li><a href="#">自助取消订单</a></li>
+                        <li><a href="#">自助修改订单</a></li>
+                    </ul>
+                    <ul class="fl">
+                        <li><a href="#">退换货</a></li>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">自助申请退换货</a></li>
+                        <li><a href="#">自助申请退换货</a></li>
+                        <li><a href="#">自助申请退换货</a></li>
+                    </ul>
+                    <ul class="fl">
+                        <li><a href="#">商家服务</a></li>
+                        <li><a href="#">商家中心</a></li>
+                        <li><a href="#">运营服务</a></li>
+                        <li><a href="#">加入唯品会</a></li>
+                    </ul>
+                    <div class="logo2 fr">
+                    <img src="images/logo_00.png" alt="">
+                </div>
+                </div>
+               
+        
+                <div class="bot">
+                       <a href="#">公司简介</a>|
+                        <a href="#">Investor Relations</a>|
+                        <a href="#">网站联盟</a>|
+                        <a href="#">乐购招商</a>|
+                        <a href="#">机构销售</a>|
+                        <a href="#">手机乐购</a>|
+                        <a href="#">官方Blog</a>|
+                        <a href="#">热词搜索</a>
+                </div>
+                <div class="last">
+                    <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+                </div>
+            </div>
+</body>
+
+</html>

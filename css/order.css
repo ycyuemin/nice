@@ -1,0 +1,345 @@
+/* 蒙层 */
+
+#mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+#box{
+    width: 470px;
+    height: 280px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -235px;
+    margin-top: -140px;
+    z-index: 999;    
+}
+#box>#box1{
+    width: 470px;    
+    height: 40px;
+    background: #e6e6e6;
+}
+#box>#box1>span{
+    margin-left: 10px;
+    margin-right: 10px;  
+    line-height: 40px;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+}
+#box>#box2{
+    height: 240px;background: url(../images/gantan.png) no-repeat 85px 50px;
+}
+#box>#box2>span{
+    height: 74px;
+    font-size: 22px;
+    color: #666;
+    display: inline-block;
+    margin-top: 70px;    
+    margin-left: 180px;   
+}
+
+#box>#box2>div{
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 78px;
+    text-align: center;
+    line-height: 40px;
+    background: #e6e6e6;
+}
+#box>#box2>.ren{
+    background: #f60;
+}
+#box>#box2>.ren>a{
+    color: #fff;
+}
+#box>#box2 a{
+    color: #666;
+}
+
+/* 顶部导航左文字 */
+.topnav .fl{
+    font-size: 14px;
+    line-height: 28px;
+    color: #dddddd;
+    text-indent: 260px;
+}
+/* logo */
+.shopheader>.logo{
+    width: 260px;
+    height: 108px;
+    background: #f60;
+    margin-top:-28px; 
+    float:left;
+	text-align:center;
+	box-sizing:border-box;
+}
+.shopheader>span{
+    display: inline-block;
+    font-size: 28px;
+    color: #666;
+     margin-top: 26px;
+    margin-left: 24px;
+}
+
+/* 内容 */
+.menu{
+    height: 1000px;
+    margin-top: 20px;
+}
+.menu>.one{
+    height: 256px;
+}
+.menu>.one>span{
+    font-size: 18px;
+    color: #666;
+}
+/* 盒子1 */
+.menu>.one>.box1{
+    height: 60px;
+    background: #f2f2f2;
+}
+.menu>.one>.box1>span{
+    text-indent: 14px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.menu>.one>.box1>span>a{
+    margin-right: 14px;
+    color: #4491ea;
+}
+/* 盒子2 */
+.menu>.one>.box2{
+    height: 196px;
+}
+.one>.box2>.style1{
+    margin: 20px 0px 0px 42px;
+    width: 1067px;
+    height: 34px;
+}
+.run{
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid #ccc;
+}
+.on{
+    border: 2px solid #f60;
+    background: url(../images/gou.png) no-repeat right bottom;
+}
+.box2 span{
+    line-height: 34px;
+    font-size: 14px;
+    color: #4d4d4d;
+    margin: 0px 80px 0px 38px;
+}
+.box2>.style1 .mo{
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    background-color: #999999;
+}
+.box2>.style1 .mo>a{
+    color: #fff;
+}
+/* 更多 */
+.box2>.style2{
+    margin: 46px 0px 0px 42px;
+    width: 1067px;
+    height: 70px;
+}
+.box2>.style2>p{
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+.box2>.style2>.run{
+    border: 2px solid #ccc;
+}
+.box2>.style2>a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 第二部分 */
+/* 支付方式 */
+.two{
+    height: 226px;
+    margin-top: 20px;
+}
+.two>.box1{
+    height: 60px;
+    background: #f2f2f2;
+}
+.two>.box1>span{
+    text-indent: 14px;
+    line-height: 60px;
+    font-size: 16px;
+}
+/* 二 */
+.way{
+    height: 96px;
+    margin: 10px 0px 0px 42px;
+    cursor: pointer;
+}
+.way>.run{
+    margin-right: 18px;
+}
+.way>a{
+    font-size: 18px;
+    line-height: 34px;
+    color: #4d4d4d;
+    margin-left: 30px;
+}
+/* 送货清单 */
+.inven{
+    height: 60px;
+    background: #ccc;
+}
+.inven>.box1{
+    height: 60px;
+    background: #f2f2f2;
+}
+.inven>.box1>span{
+    text-indent: 14px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.inven>.box1>span>a{
+    margin-right: 14px;
+    color: #4491ea;
+}
+/* 配送方式 */
+.dispat{
+    border-bottom: 2px solid #ccc;
+    height: 272px;
+}
+/* 左边内容 */
+.dispat>.left{
+    height: 272px;    
+    width: 444px;
+}
+.dispat>.left>p{
+    margin-top: 30px;
+    margin-left: 16px;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+.dispat>.left>.run{
+    margin-left: 43px;
+    margin-top: 16px;
+    margin-bottom: 44px;
+}
+.dispat>.left>span{
+    display: block;
+    color: #999999;
+    font-size: 16px;
+    line-height: 36px;
+    margin-left: 16px;    
+}
+/* 右边内容 */
+.dispat>.right{
+    width: 736px;
+    height: 253px;
+    background: #f2f2f2;
+    margin-top: 8px;
+}
+.dispat>.right>.img{
+    width: 160px;
+    height: 160px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background: #fff;
+}
+.dispat>.right>.img>img{
+    margin-left: 24px;
+}
+.right>span{
+    font-size: 16px;
+    margin-left: 78px;
+    margin-top: 58px;
+}
+/* 下方 */
+
+.but>.yi{
+    height: 106px;
+    border-bottom: 1px solid #ccc;
+}
+.but>.yi>p{
+    margin-top: 18px;
+    margin-left: 16px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #4d4d4d;
+}
+.but>.yi>span{
+    margin-left: 16px;    
+    margin-right: 30px;    
+    font-size: 16px;
+    color: #999999;
+}
+.but>.er{
+    height: 59px;
+    border-bottom: 1px solid #ccc;
+}
+.but>.er span{
+    font-size: 16px;
+    color: #999999;  
+    line-height: 60px; 
+    margin-right: 80px; 
+    margin-left: 10px; 
+}
+.but>.er .col{
+    color: #f60;
+    font-size: 18px;
+}
+/* san */
+.san{
+    margin-top: 18px;
+    height: 60px;
+}
+.san>span{
+    margin-left: 10px;
+    color: #999999;
+    
+}
+.san>input{
+    width: 345px;
+    height: 22px;
+    border: none;
+	background-color: #ffffff;
+	border: solid 1px #d9d9d9;
+}
+.san>.text1{
+    width: 100px;
+    height: 22px;
+    border: none;
+	background-color: #ffffff;
+	border: solid 1px #d9d9d9;
+}
+.san>a{
+    margin-top: -18px;
+    width: 140px;
+    height: 60px;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    line-height: 60px;
+	background-color: #ff6600;
+}
+/* 插图 */
+.photo{
+    margin-top: 50px;
+    
+}

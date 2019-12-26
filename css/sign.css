@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* 顶部导航左文字 */
+.topnav .fl{
+    font-size: 14px;
+    line-height: 28px;
+    color: #dddddd;
+    text-indent: 260px;
+}
+/* logo */
+.shopheader>.logo{
+    width: 260px;
+    height: 110px;
+    background: #f60;
+    margin-top:-28px; 
+    float:left;
+	text-align:center;
+	box-sizing:border-box;
+}
+.shopheader>span{
+    display: inline-block;
+    font-size: 28px;
+    color: #666;
+     margin-top: 26px;
+    margin-left: 24px;
+}
+
+/* 背景 */
+
+.bigbox>.container{
+    height: 500px;
+    background: url(../images/denglu.jpg) no-repeat center;
+}
+.bigbox{
+    width: 100%;
+    background: #e93854;
+} 
+
+/* 扫码登录 */
+.bigbox .dengluk{
+    width: 350px;
+    height: 370px;
+    margin-top: 65px;
+    margin-right: 90px;
+    background: #fff;
+}
+
+.bigbox .dengluk li{
+    width: 174px;
+    height: 24px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bigbox .dengluk li:first-child{
+    border-right: 1px solid #ccc;
+}
+/* 扫码区 */
+.bigbox .dengluk .btu{
+    width: 348px;
+    height: 248px;
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+}
+.bigbox .dengluk .btu>div{
+    margin: 65px 0px 0px 26px;
+}
+/* 提醒 */
+.bigbox .dengluk .wenzi{
+    text-align: center;
+    color: #666;
+    text-indent:  20px;
+}
+
+/* 账户登录 */
+.bigbox .sidenglu{
+    width: 350px;
+    height: 264px;
+    margin-top: 65px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.sidenglu .one{
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 288px;
+    height: 38px;
+    border: 1px solid #ccc;
+}
+.sidenglu .one>input{
+    width: 220px;
+    height: 38px;
+    font-size: 16px;
+    color: #ccc;
+    text-indent: 10px;
+    border: none;
+}
+.sidenglu .two{
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 288px;
+    height: 38px;
+    border: 1px solid #ccc;
+}
+.sidenglu .two>input{
+    width: 250px;
+    height: 38px;
+    text-indent: 10px;
+    border: none;
+}
+.sidenglu .three>input{
+    margin-left: 30px;
+    margin-top: 12px;
+}
+.sidenglu .three a{
+    color: #4d4d4d;
+}
+.sidenglu .three .fir{
+    margin-left: 160px;
+}
+.sidenglu .four{
+    width: 290px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    background: #f60;
+}
+.sidenglu .four a{
+    font-size: 22px;
+    color: #fff;
+    line-height: 40px;
+    margin-left: 112px;    
+}
+.zhuce{
+    width: 100px;
+    height: 20px;
+    margin-top: 35px;
+    margin-left: 132px;
+}
+.zhuce a{
+    font-size: 16px;
+    line-height: 20px;
+}
+/* 底部 */
+.bot{
+    width:788px;
+    margin: 30px auto;
+}
+.bot>a{
+    color: #4d4d4d;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 14px;
+}
+.last>p{
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 24px;
+}

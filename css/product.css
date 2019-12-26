@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+
+/* 轮播左盒子 */
+.menu>.lunbo{
+    width: 1000px;
+    height: 430px;
+}
+
+/* 右盒子 */
+.menu>.right{
+    width: 200px;
+    height: 430px;
+}
+.menu>.right>div{
+    width: 200px;
+    height: 30px;
+    background: #93d470;
+}
+.menu>.right>div>p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+}
+/* 右侧书籍管理 */
+.menu>.right .no{
+    display: none;
+}
+
+
+.menu>.right .style1 .one{
+    width: 18px;
+    height: 18px;
+    background: #f60;
+    color: #fff;
+    text-align: center;
+}
+.menu>.right .style2 .one{
+    width: 18px;
+    height: 18px;
+    background: #f60;
+    color: #fff;
+    text-align: center;
+}
+/* 图片 */
+.menu>.right li{
+    margin-top: 6px;
+    margin-left: 6px;
+}
+/* 文字 */
+.menu>.right .style1 .three{
+    width: 106px;
+    height: 50px;
+    font-size: 14px;
+    text-align: left;
+}
+.menu>.right .style2{
+    width: 200px;
+    height: 42px;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+.menu>.right .style2 .three{
+    width: 82px;
+    height: 18px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+/* 图书折扣区 */
+.title2{
+    margin-top: 24px;
+    border-bottom: 6px solid #f60;
+}
+.title2>div{
+    width: 218px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    background: #f60;
+}
+/* 内容盒子 */
+.pic{
+    width: 1200px;
+    height: 512px;
+}
+
+.pic>.bookPics:hover{
+    background: #f1f1f1;
+}
+.pic>.bookPics>.bookPh{
+    margin: 10px 45px 0px 45px;
+}
+.pic>.bookPics>p>a{
+    color: #333333;
+    margin-left: 10px;
+}
+.pic>.bookPics .col{
+    margin-left: 10px;   
+}
+/* 精灵图 */
+
+.pic>.bookPics .tu{
+    width: 114px;
+    height: 20px;
+    background: url(../images/star_small.gif) no-repeat 1px -20px;
+} 
+.pic>.bookPics .bookPrice{
+    font-size: 18px;
+}
+.pic>.bookPics .bookPrice .shanchu{
+    color: #c0c0c0;
+    margin-left: 24px;
+}
+/* 原价 */
+
+.pic del{
+    display: none
+}
+
+/* 新书上架 */
+/* 标题文字 */
+.newBook>.title{
+    width: 900px;
+    border-bottom: 6px solid #f60;
+}
+.newBook>.title>p>span{
+    display: inline-block;
+    width: 42px;
+    height: 38px;
+    font-size: 28px;
+    background: #f60;
+    color: #fff;
+    text-align: center;
+}
+.newBook>.title>p{
+    font-size: 22px;
+}
+
+/* 左盒子 */
+.newBook>.left{
+    width: 896px;
+    height: 496px;
+    border: 2px solid #ccc;
+    border-top: 0px;
+}
+/* 盒子内容 */
+.newBook .bookPics:hover{
+    background: #f1f1f1;
+}
+
+.newBook>.left>.bookPics>.bookPh{
+    margin: 30px 15px 12px 14px;
+}
+.newBook>.left>.bookPics>p>a{
+    color: #333333;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.newBook>.left>.bookPics>.chu{
+    margin-left: 25px;   
+    font-size: 14px;    
+}
+.newBook>.left>.bookPics .col{
+    margin-left: 25px;   
+}
+.newBook>.left>.bookPics .shanchu{
+    color: #c0c0c0;
+    margin-left: 30px;
+}
+
+/* 右盒子 */
+.newBook>.right{
+    width: 276px;
+    height: 496px;
+    border: 2px solid #ccc;
+}
+
+.newBook>.right>p{
+    font-size: 24px;
+    color: #808080;
+    text-align: center;
+    margin-bottom: 12px;
+    
+}
+.newBook>.right li{
+    margin-top: 20px;
+}
+
+
+.newBook>.right .style1 .one{
+    font-size: 14px;
+    margin-left: 8px;
+}
+.newBook>.right .style1>.three{
+    width: 126px;
+    height: 118px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 12px;
+    color: #535353;
+}
+
+.newBook>.right .style2>span{
+    font-size: 14px;  
+    line-height: 26px;
+}
+.newBook>.right .hide{
+    display: none;
+}
+
+/* 独家提供 */
+#only{
+    margin-top: 58px;
+    height: 600px;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+
+.productTitle{
+    width: 1200px;
+    border-bottom: 6px solid #f60;
+}
+.productTitle>p>span{
+    display: inline-block;
+    width: 42px;
+    height: 38px;
+    font-size: 28px;
+    background: #f60;
+    color: #fff;
+    text-align: center;
+}
+.productTitle>p{
+    font-size: 22px;
+}
+#only .productTitle li{
+    font-size: 16px;
+    width: 98px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+#only .productTitle li.active{
+    background: #f60;
+    color: #fff;
+}
+#only .pic h1{
+    font-size: 30px;
+    text-align: center;
+}
+#only>.page{
+    height: 36px;
+    margin-left: 488px;
+    
+}
+#only .page>li{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #b3b3b3;
+    margin-right:20px;
+    float: left;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#only>.page>.active{
+    background: #ff6600;
+}
+
+/* 猜你喜欢 */
+.like{
+    margin-top: 40px;
+}
+.like>.title{
+    width: 1200px;
+    border-bottom: 6px solid #f60;
+}
+.like .bookPics:hover{
+    background: #f1f1f1;
+}
+.like .tupian:hover{
+    background: #f1f1f1;
+}
+.like>.title>p>span{
+    display: inline-block;
+    width: 42px;
+    height: 38px;
+    font-size: 28px;
+    background: #f60;
+    color: #fff;
+    text-align: center;
+}
+.like>.title>p{
+    font-size: 22px;
+}
+/* 内容盒子 */
+.like>.menu{
+    height: 494px;
+    border-bottom: 2px solid #ccc;
+}
+.like>.menu .bookPics{
+    width: 200px;
+    height: 246px;
+}
+.like>.menu>.bookPics>.bookPh{
+    margin: 30px 15px 12px 14px;
+}
+.like>.menu>.bookPics>p>a{
+    color: #333333;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.like>.menu>.bookPics>.chu{
+    margin-left: 25px;   
+    font-size: 14px;    
+}
+.like>.menu>.bookPics .col{
+    margin-left: 25px;   
+}
+.like>.menu>.bookPics .shanchu{
+    color: #c0c0c0;
+    margin-left: 30px;
+}
+/* 下边盒子 */
+.xia{
+    height: 160px;
+}
+.xia>.tupian{
+    width: 200px;
+    height: 160px;
+}
+.xia>.tupian>div{
+    width: 100px;
+    margin-top: 42px;
+    margin-left: 12px;
+}
+.xia>.tupian>div>.one{
+    line-height: 20px;
+    font-size: 14px;
+}
+.xia>.tupian>div>.two{
+    line-height: 20px;    
+    color: #999;
+}
+.xia>.tupian>div>.three{
+    text-align: center;
+    line-height: 20px;    
+    background: #f2361d;
+    border-radius: 9px;
+    color: #fff;
+}
+.xia>.tupian>img{
+    margin-top: 42px;    
+}

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品详情</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/magnifier.css">
+    <script src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/magnifier.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topnav">
+        <!-- 版心 -->
+        <div class="container clearfix">
+            <!-- 左边文字 -->
+            <div class="fl">legochina.cn</div>
+            <!-- 右边文字 -->
+            <div class="fr">欢迎光临
+                <a href="index.html">乐购</a>，请
+                <a href="sign.html">登陆</a> \
+                <a href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- logo -->
+    <div class="header container clearfix">
+        <div class="logo">
+            <img src="images/02-list-logo_02.jpg" alt="">
+            <!-- <p>全部商品分类</p> -->
+        </div>
+        <!-- 搜索 -->
+        <div class="search clearfix">
+            <form>
+                <input type="text" name="keywords" placeholder="设计中的设计">
+                <button type="submit">搜索</button>
+            </form>
+            <a href="#" class="myorder">我的订单</a>
+            <a href="shoppingcar.html" class="shopping">购物车 3</a>
+
+            <!-- 导航栏 -->
+            <div class="nav">
+                <a href="#">图书</a>
+                <a href="#">电子书</a>
+                <a href="#">原创文学</a>
+                <a href="#">服装</a>
+                <a href="#">运动户外</a>
+                <a href="#">孕婴童</a>
+                <a href="#">家居</a>
+                <a href="#">创意文具</a>
+                <a href="#">地方特产</a>
+                <a href="#">海外购</a>
+                <a href="#">电器城</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图书 -->
+    <div class="tbook">
+        <!-- 标题 -->
+        <div class="container">
+            <p class="new">
+                <span>图书</span> > 小说 > 情感/家庭/婚姻 > 博集天卷 > 他和她>
+            </p>
+            <!-- 内容盒子 -->
+            <div class="menu clearfix">
+                <!-- 左盒子放大镜 -->
+                <div class="left fl">
+                        <div class="magnifier" id="magnifier1">
+                                <div class="magnifier-container">
+                                    <div class="images-cover"></div>
+                                    <!--当前图片显示容器-->
+                                    <div class="move-view"></div>
+                                    <!--跟随鼠标移动的盒子-->
+                                </div>
+                                <div class="magnifier-assembly">
+                                    <div class="magnifier-btn">
+                                        <span class="magnifier-btn-left">&lt;</span>
+                                        <span class="magnifier-btn-right">&gt;</span>
+                                    </div>
+                                    <!--按钮组-->
+                                    <div class="magnifier-line">
+                                        <ul class="clearfix animation03">
+                                            <li>
+                                                <div class="small-img">
+                                                    <img src="images/1.png" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="small-img">
+                                                    <img src="images/2.png" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="small-img">
+                                                    <img src="images/3.png" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="small-img">
+                                                    <img src="images/4.png" />
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <!--缩略图-->
+                                </div>
+                                <div class="magnifier-view"></div>
+                                <!--经过放大的图片显示容器-->
+                            </div>
+                            
+                            <script type="text/javascript">
+                            var magnifierConfig = {
+                                magnifier : "#magnifier1",//最外层的大容器
+                                width : 342,//承载容器宽
+                                height : 350,//承载容器高
+                                moveWidth : null,//如果设置了移动盒子的宽度，则不计算缩放比例
+                                zoom : 5//缩放比例
+                            };
+	                            var _magnifier = magnifier(magnifierConfig);
+                            </script>
+                </div>
+                <!-- 右盒子 -->
+                <div class="right fr clearfix">
+                    <!-- 内容1 -->
+                    <div class="one">
+                        <p>他和她</p>
+                        <p class="col">《偷影子的人》作者马克·李维重磅新作，法国连续60周年在榜，销量突破120万册</p>
+                        <p>[法] 马克·李维 著; 杨亦雨 译</p>
+                    </div>
+                    <!-- 内容2 -->
+                    <div class="two clearfix">
+                        <!-- 右边小盒子 -->
+                        <div class="you fr">
+                            <a href="#">累积评论</a>
+                            <p class="col">9999+</p>
+                        </div>
+                        <!-- 内容上 -->
+                        <div class="top">
+                            <p class="style1">乐购价：&nbsp;
+                                <span>￥26.20</span>&nbsp;[6.9折] &nbsp;[定价：
+                                <del>￥38.00</del>]&nbsp; (降价通知)</p>
+                            <p class="style2">促销信息：&nbsp;
+                                <span class="hong">满减 每满150.00元，&nbsp;可减50.00元现金</span>&nbsp;&nbsp; &nbsp;
+                                <a href="#"> 详情 >></a>
+                            </p>
+                        </div>
+
+                        <!-- 券 -->
+                        <div class="quan">
+                            <span>领&nbsp;券：</span>
+                            <span class="bei">100-6</span>
+                            <span class="bei">200-30</span>
+                        </div>
+
+                    </div>
+                    <!-- 种类选择 -->
+                    <div class="ztype clearfix">
+                        <span class="fl">种类选择:</span>
+                        <div class="fl">平装版</div>
+                        <div class="fl on">精装版</div>
+                    </div>
+
+                    <!-- 加入购物车 -->
+                    <div class="gouWu clearfix">
+                        <!-- 按钮 -->
+                        <p class="clearfix">
+                            <input type="button" value="-" / class="fr">
+                            <input type="text" value="1" / class="fl">
+                            <input type="button" value="+" / class="fr">
+                        </p>
+                       
+                        <!-- 加入 -->
+                        <div class="jiaru fr">
+                            <a href="#">加入购物车</a>
+                        </div>
+                    </div>
+                    <!-- 提示 -->
+                    <p>温馨提示：支持7天无理由退货</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 人气单品 -->
+    <div class="single container clearfix">
+        <!-- 标题 -->
+        <div class="title2">
+            <div>人气单品</div>
+        </div>
+        <div class="fl pic clearfix">
+            <div class="bookPics fl on">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu on">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+            <div class="bookPics fl">
+                <div class="bookPh">
+                    <img src="images/02-baiyexing_07.jpg" alt="">
+                </div>
+                <img src="images/02-8zhe_10.jpg" alt="">
+                <p>
+                    <a href="#">白夜行 东野上吾</a>
+                </p>
+                <div class="clearfix">
+                    <span class="col fl">推荐：</span>
+                    <div class="tu fl"></div>
+                </div>
+                <p class="bookPrice">
+                    <span class="col">￥:38</span>
+                    <del class="shanchu">￥:58</del>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 看了又看 -->
+    <div class="look container clearfix">
+        <!-- 左盒子 -->
+        <div class="wrap fl">
+            <div class="title">
+                看了又看
+            </div>
+            <!-- 内容 -->
+            <div class="fl pic clearfix">
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+                <div class="bookPics fl">
+                    <div class="bookPh">
+                        <img src="images/02-baiyexing_07.jpg" alt="">
+                    </div>
+                    <img src="images/02-8zhe_10.jpg" alt="">
+                    <p>
+                        <a href="#">白夜行 东野上吾</a>
+                    </p>
+                    <div class="clearfix">
+                        <span class="col fl">推荐：</span>
+                        <div class="tu fl"></div>
+                    </div>
+                    <p class="bookPrice">
+                        <span class="col">￥:38</span>
+                        <del class="shanchu">￥:58</del>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右盒子 -->
+        <div class="wrap2 fr">
+            <!-- 标题 -->
+            <div class="title2 clearfix">
+                <ul class="fl clearfix">
+                    <li class="fl active">商品介绍</li>
+                    <li class="fl">评价(9999)</li>
+                </ul>
+
+            </div>
+            <!-- 内容 -->
+            <div class="big">
+            <div class="tu">
+                <img src="./images/details5_1.gif" alt="">
+                
+            </div>
+            <div class="boxwen">
+                <p>作者简介</p>
+                <p>
+                    她叫米娅，来自英国，当红女演员，却只想远离萧瑟的伦敦，聆听感动与欢笑的话语。
+                    他叫保罗，来自美国，曾经的建筑设计师，因为一本书-炮而红，却无法适应他人追逐的目光。他隐身于巴黎，只能与自己小说中的人物结为挚友。
+                </p>
+                <p>
+                    米娅的事业非常成功，保罗却一直郁郁不得志。保罗幽默风趣，米娅却不善与人交际。她很孤单，他也一直如此。缘于朋友善意的思作剧，
+                    米娅和保罗相识于社交网络，却没有成为恋人，他们发展出很好的友谊
+                    并试图将友情一直维持下去。
+                </p>
+                <p> 然而，一些意想不到的事情发生了...........</p>
+            </div>
+            </div>
+            <!-- 98% -->
+            <!-- 已隐藏 -->
+            <div class="big" style="display: none">      
+                <div class="top clearfix">
+
+                <div class="fl one">
+                    <p class="col">98%</p>
+                    <br>
+                    <span>好评度</span>
+
+                </div>
+                <div class="two fl">
+                    <span class="clearfix">好评(98%)
+                        <div>
+                            <div></div>
+                        </div>
+                    </span>
+                    <span class="clearfix">中评(2%)&nbsp;&nbsp;
+                        <div>
+                            <div></div>
+                        </div>
+                    </span>
+                    <span class="clearfix">差评(0%)&nbsp;&nbsp;
+                        <div>
+                            <div></div>
+                        </div>
+                    </span>
+
+                </div>
+                <!-- 州子 -->
+                <div class="three clearfix">
+                    <ul class="fl">
+                        <li class="fl">
+                            1.州**子
+                        </li>
+                        <li class="fl">+0</li>
+                        <li class="fl">
+                            2.州**子
+                        </li>
+                        <li class="fl">+0</li>
+                        <li class="fl">
+                            3.州**子
+                        </li>
+                        <li class="fl">+10</li>
+                        <li class="fl">
+                            4.州**子
+                        </li>
+                        <li class="fl">+10</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 标题盒子 -->
+            <div class="box clearfix">
+                <ul class="fl">
+                    <li class="fl active">
+                        <a href="" class="col">全部评价(9999)</a>
+                    </li>
+                    <li class="fl">
+                        <a href=""></a>好评(888)</a>
+                    </li>
+                    <li class="fl">
+                        <a href=""></a>中评(888)</a>
+                    </li>
+                    <li class="fl">
+                        <a href=""></a>差评(888)</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 内容盒子 -->
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            <div class="menuBox clearfix">
+                <div class="star fl">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <p>下单后5天评论</p>
+                    <span>2016-08-11</span>
+                </div>
+                <div class="fl wenzi">
+                    <p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关键是价格真给力</p>
+                </div>
+                <!-- 右边 -->
+                <div class="xBox fr">
+                    <img src="images/XXX.png" alt="">
+                    <span>州**子</span><br>
+                    <p class="col">金牌会员</p>
+                    <span>来自iPhone客户端</span>
+                </div>
+
+            </div>
+            
+    <!-- 翻页 -->
+    <div class="fanyeBox clearfix">
+        <ul class="fr clearfix">
+            <li class="fl"><a href="#">1</a></li>
+            <li class="fl"><a href="#">2</a></li>
+            <li class="fl"><a href="#">3</a></li>
+            <li class="fl"><a href="#">4</a></li>
+            <li class="fl"><a href="#">5</a></li>
+            <li class="fl"><a href="#">6</a></li>
+            <li class="fl">......</li>
+            <li class="fl"><a href="#">下一页</a></li>
+        </ul>
+    </div></div>
+      
+</div>
+</div>
+    <!-- 插图 -->
+    <div class="photo container">
+        <img src="images/moshoushijie.jpg" alt="">
+    </div>
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="top">
+            <div class="center">
+                <img src="images/222_11.png" alt="">
+                <img src="images/222_13(1).png" alt="">
+                <img src="images/222_15.png" alt="">
+                <img src="images/222_17.png" alt="">
+            </div>
+        </div>
+        <!-- 列表 -->
+        <div class="list clearfix container">
+            <ul class="fl">
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">发票制度</a></li>
+                <li><a href="#">账户管理</a></li>
+                <li><a href="#">会员优惠</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">支付方式</a></li>
+                <li><a href="#">货到付款</a></li>
+                <li><a href="#">网上支付</a></li>
+                <li><a href="#">礼品卡支付</a></li>
+                <li><a href="#">银行转账</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">订单服务</a></li>
+                <li><a href="#">订单配送查询</a></li>
+                <li><a href="#">订单状态说明</a></li>
+                <li><a href="#">自助取消订单</a></li>
+                <li><a href="#">自助修改订单</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">退换货</a></li>
+                <li><a href="#">退换货政策</a></li>
+                <li><a href="#">自助申请退换货</a></li>
+                <li><a href="#">自助申请退换货</a></li>
+                <li><a href="#">自助申请退换货</a></li>
+            </ul>
+            <ul class="fl">
+                <li><a href="#">商家服务</a></li>
+                <li><a href="#">商家中心</a></li>
+                <li><a href="#">运营服务</a></li>
+                <li><a href="#">加入唯品会</a></li>
+            </ul>
+            <div class="logo2 fr">
+            <img src="images/logo_00.png" alt="">
+        </div>
+        </div>
+       
+
+        <div class="bot">
+               <a href="#">公司简介</a>|
+                <a href="#">Investor Relations</a>|
+                <a href="#">网站联盟</a>|
+                <a href="#">乐购招商</a>|
+                <a href="#">机构销售</a>|
+                <a href="#">手机乐购</a>|
+                <a href="#">官方Blog</a>|
+                <a href="#">热词搜索</a>
+        </div>
+        <div class="last">
+            <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+    </div>
+
+       <!-- 蒙层效果 -->
+       <div id="mask" style="display: none"></div>
+       <div id="box" style="display: none">
+           <div id="box1" class="clearfix">
+               <span class="fl">登录提示</span>
+               <span class="fr xiao">X</span>
+           </div>
+           <div id="box2">
+               <span>请先进行登录再操作</span>
+               <div class="xiao fl"><a href="#">取消</a></div>
+               <div class="ren fl"><a href="sign.html">确认</a></div>
+           </div>
+              
+       </div>
+
+</body>
+
+</html>

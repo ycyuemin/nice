@@ -1,0 +1,562 @@
+@charset "utf-8";
+/* 蒙层 */
+
+#mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+#box{
+    width: 470px;
+    height: 280px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -235px;
+    margin-top: -140px;
+    z-index: 999;    
+}
+#box>#box1{
+    width: 470px;    
+    height: 40px;
+    background: #e6e6e6;
+}
+#box>#box1>span{
+    margin-left: 10px;
+    margin-right: 10px;  
+    line-height: 40px;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+}
+#box>#box2{
+    height: 240px;background: url(../images/gantan.png) no-repeat 85px 50px;
+}
+#box>#box2>span{
+    height: 74px;
+    font-size: 22px;
+    color: #666;
+    display: inline-block;
+    margin-top: 70px;    
+    margin-left: 180px;   
+}
+
+#box>#box2>div{
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 78px;
+    text-align: center;
+    line-height: 40px;
+    background: #e6e6e6;
+}
+#box>#box2>.ren{
+    background: #f60;
+}
+#box>#box2>.ren>a{
+    color: #fff;
+}
+#box>#box2 a{
+    color: #666;
+}
+
+/* 图书 */
+.tbook{
+    height: 596px;
+    background: #f2f2f2;
+}
+
+/* 标题 */
+.tbook .new{
+    font-size: 16px;
+	color: #646464;
+}
+.tbook .new>span{
+     font-size: 24px; 
+     line-height: 48px;
+     color: #333333;
+}
+
+/* 左盒子 */
+.tbook .menu{
+    height: 512px;
+    background: #fff;
+}
+.menu .left{
+    width: 342px;
+    height: 474px;
+    margin-left: 18px;
+    margin-top: 14px;
+    /* border: 1px solid #000; */
+}
+
+/* 右盒子 */
+.menu .right{
+    width: 836px;
+    height: 474px;
+    margin-top: 14px;
+}
+/* 盒子1 */
+.menu .right .one{
+    width: 638px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.menu .right .one>p:first-child{
+    font-size: 22px;
+    line-height: 35px;
+    color: #343434;
+}
+.menu .right .one>p:nth-child(2){
+    font-size: 16px;
+    line-height: 32px;
+}
+.menu .right .one>p:last-child{
+    font-size: 12px;
+    color: #818181;    
+}
+/* 盒子2 */
+.menu .right .two{
+    width: 788px;
+	height: 140px;
+    background-color: #f5f5f5;
+    margin-left: 14px;
+}
+/* 内容上 */
+.menu .right .two>.top{
+    width: 450px;
+    height: 55px;
+    margin-left: 18px;
+}
+/* 文字 */
+.menu .right .two>.top>.style1{
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 28px;
+}
+.menu .right .two>.top>.style1>span{
+    color: #f80e0e;
+    font-size: 18px;
+}
+.menu .right .two>.top>.style2{
+    font-size: 14px;
+    line-height: 28px;    
+    color: #6c6c6c;
+}
+.menu .right .two>.top>.style2>.hong{
+    color: #f80e0e;
+}
+.menu .right .two>.top>.style2>a{
+    color: #6c6c6c;    
+}
+.menu .right .two>.you{
+    width: 80px;
+    height: 40px;
+    margin-top: 9px;
+    border-left: 2px solid #ccc;
+}
+.menu .right .two>.you>a{
+    margin-left: 8px;
+    font-size: 16px;
+    color: #949494;
+}
+.menu .right .two>.you>p{
+    text-align: center;
+    font-size: 12px;
+}
+/* 券 */
+.menu .right .two .quan{
+    width: 450px;
+    height: 26px;
+    margin-top: 28px;
+    margin-left: 18px;
+}
+.menu .right .two .quan >span{
+    font-size: 14px;
+    color: #808080;
+}
+.menu .right .two .quan .bei{
+    width: 94px;
+    display: inline-block;
+    height: 26px;
+    background: url(../images/quan_03.png) no-repeat;
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+/* 种类选择 */
+
+.menu .right>.ztype{
+    width: 286px;
+    height: 34px;
+    margin-left: 30px;
+    margin-top: 16px;
+}
+.menu .right>.ztype>span{
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 34px;
+}
+.menu .right>.ztype>div{
+    width: 98px;
+    height: 32px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.menu .right>.ztype .on{
+    width: 96px;
+    height: 30px;
+    border: 2px solid #f60;
+    background: url(../images/gou.png) no-repeat right bottom;
+}
+
+/* 加入购物车 */
+.menu .right>.gouWu{
+    width: 280px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.menu .right>.gouWu p{
+    width: 62px;
+    height: 44px;
+    margin-top: 10px;
+    display: inline-block;
+}
+input {
+    width: 20px;
+    height: 21px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+input:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+
+/* 加入 */
+.menu .right>.gouWu>.jiaru{
+    width: 190px;
+    height: 60px;
+    background: #f60;
+}
+.menu .right>.gouWu>.jiaru>a{
+    font-size: 24px;
+    color: #fff;
+    line-height: 60px;
+    margin-left: 35px;
+}
+/* 温馨提示 */
+.menu .right>p{
+    margin-left: 30px;
+    margin-top: 24px;
+    color: #8a8a8a;
+}
+
+/* 人气单品 */
+.single .title2{
+    margin-top: 4px;
+    border-bottom: 6px solid #f60;
+}
+.single .title2>div{
+    width: 124px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    background: #f60;
+}
+
+
+/* 内容盒子 */
+.single .pic{
+    width: 1200px;
+}
+.single .pic>.bookPics:hover{
+    background: #f2f2f2;
+}
+.single .pic>.bookPics{
+    width: 240px;
+    height: 256px;
+}
+.single .pic>.bookPics>.bookPh{
+    margin: 10px 45px 0px 45px;
+}
+.single .pic>.bookPics>p>a{
+    color: #333333;
+    margin-left: 10px;
+}
+.single .pic>.bookPics .col{
+    margin-left: 10px;   
+}
+/* 精灵图 */
+
+.single .pic>.bookPics .tu{
+    width: 114px;
+    height: 20px;
+    background: url(../images/star_small.gif) no-repeat 1px -20px;
+} 
+.single .pic>.bookPics .bookPrice{
+    font-size: 18px;
+}
+.single .pic>.bookPics .bookPrice .shanchu{
+    color: #c0c0c0;
+    margin-left: 24px;
+}
+/* 原价 */
+
+.single .pic del{
+    display: none
+}
+
+/* 看了又看 */
+/* 左盒子 */
+.look{
+    margin-top: 48px;
+}
+.look>.wrap{
+    width: 318px;
+	border: 1px solid #e6e6e6;
+}
+/* 标题 */
+.look>.wrap>.title{
+    height: 40px;
+    background: #f4f4f4;
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 内容盒子 */
+.look .pic{
+    width: 318px;
+}
+
+.look .pic>.bookPics:hover{
+    background: #f2f2f2;
+}
+.look .pic>.bookPics{
+    width: 318px;
+    height: 312px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.look .pic>.bookPics>.bookPh{
+    margin: 68px 84px 0px 84px;
+}
+.look .pic>.bookPics>p>a{
+    color: #333333;
+    margin-left: 10px;
+}
+.look .pic>.bookPics .col{
+    margin-left: 10px;  
+    font-size: 18px; 
+    line-height: 30px;
+}
+/* 精灵图 */
+
+.look .pic>.bookPics .tu{
+    width: 114px;
+    height: 20px;
+    background: url(../images/star_small.gif) no-repeat -1px -20px;
+} 
+.look .pic>.bookPics .bookPrice{
+    font-size: 18px;
+}
+.look .pic>.bookPics .bookPrice .shanchu{
+    color: #c0c0c0;
+    margin-left: 24px;
+}
+
+/* 右边盒子 */
+
+.look>.wrap2{
+    width: 856px;
+    /* height: 2064px; */
+}
+/* 标题 */
+.look .title2{
+    border-bottom: 6px solid #f60;
+}
+.look .title2 li{
+    font-size: 16px;
+    width: 98px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+.look .title2 li.active{
+    background: #f60;
+    color: #fff;
+}
+/* 内容 */
+.look>.wrap2>.big>.top{
+    height: 170px;
+}
+.look>.wrap2>.big>.top>.one{
+    width: 120px;
+    height: 90px;
+    margin-left: 34px;
+    margin-top: 40px;
+}
+.look>.wrap2>.big>.top>.one>.col{
+    display: inline-block;
+    font-size: 52px;
+}
+.look>.wrap2>.big>.top>.one>span{
+    font-size: 14px;
+    color: #999;
+    margin-left: 38px;
+}
+/* 好评 */
+.look>.wrap2>.big>.top>.two{
+    width: 340px;
+    height: 80px;
+    margin-left: 34px;
+    margin-top: 46px;
+}
+.look>.wrap2>.big>.top>.two span{
+    font-size: 14px;
+    line-height: 28px; 
+    color: #a0a0a0;
+}
+.look>.wrap2>.big>.top>.two span:first-child div:first-child{
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    background: #e6e6e6;
+}
+.look>.wrap2>.big>.top>.two span:first-child div:last-child{
+    width: 146px;
+    height: 15px;
+    background-color: #f8380c;
+}
+.look>.wrap2>.big>.top>.two span:nth-child(2) div:first-child{
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    background: #e6e6e6;
+}
+.look>.wrap2>.big>.top>.two span:nth-child(2) div:last-child{
+    width: 5px;
+    height: 15px;
+    background-color: #f8380c;
+}
+.look>.wrap2>.big>.top>.two span:last-child div:first-child{
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    background: #e6e6e6;
+}
+
+/* 州子 */
+.look>.wrap2>.big>.top>.three>ul{
+    margin-top: 46px;
+    width: 320px;
+}
+.look>.wrap2>.big>.top>.three>ul>li{
+    font-size: 14px;
+    color: #666;
+    margin: 0px 36px 8px 0px;
+}
+
+/* 标题盒子 */
+.look>.wrap2>.big>.box{
+    width: 856px;
+	height: 30px;
+	background-color: #f5f5f5;
+}
+.look>.wrap2>.big>.box>ul>li{
+    font-size: 16px;
+    margin-left: 34px;
+    line-height: 30px;
+}
+/* 内容盒子 */
+.look>.wrap2>.big>.menuBox{
+    width: 822px;
+    height: 126px;
+    margin-top: 18px;
+    margin-left: 34px;
+    border-bottom: 2px solid #f5f5f5;
+}
+.look>.wrap2>.big>.menuBox>.star{
+    width: 120px;
+    height: 60px;
+}
+.look>.wrap2>.big>.menuBox>.star>p{
+    color: #a6a6a6;
+    font-size: 14px;
+    line-height: 24px;
+}
+.look>.wrap2>.big>.menuBox>.star>span{
+    color: #a6a6a6;
+    font-size: 14px;  
+}
+.look>.wrap2>.big>.menuBox>.wenzi{
+    margin-left: 42px;
+}
+.look>.wrap2>.big>.menuBox>.wenzi>p{
+    width: 450px;
+	height: 30px;
+	font-size: 14px;
+	color: #666666;
+}
+/* 右边 */
+.look>.wrap2>.big>.menuBox>.xBox{
+    width: 112px;
+    height: 68px;
+}
+
+/* 翻页 */
+.big>.fanyeBox{
+    margin-top: 26px;
+}
+.big>.fanyeBox>ul>li{
+    width: 32px;
+    height: 32px;
+    background: #fafafa;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 8px;
+    text-align: center;
+}
+.big>.fanyeBox>ul>li>a{
+    color: #999999;
+}
+.big>.fanyeBox>ul>li:last-child{
+    width: 64px;
+}
+
+
+
+/* 产品详情 */
+
+.look .tu{
+    margin-left: 60px;
+    margin-top: 10px;
+    /* border-bottom: 6px solid #f60; */
+}
+.look .boxwen{
+    margin-left: 60px;
+    width: 748px;
+    font-size: 16px;
+    line-height: 38px;
+    color: #4d4d4d;
+}

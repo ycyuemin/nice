@@ -1,0 +1,126 @@
+
+/* 顶部导航左文字 */
+.topnav .fl{
+    font-size: 14px;
+    line-height: 28px;
+    color: #dddddd;
+    text-indent: 260px;
+}
+/* logo */
+.shopheader>.logo{
+    width: 260px;
+    height: 110px;
+    background: #f60;
+    margin-top:-28px; 
+    float:left;
+	text-align:center;
+	box-sizing:border-box;
+}
+.shopheader>span{
+    display: inline-block;
+    font-size: 28px;
+    color: #666;
+     margin-top: 26px;
+    margin-left: 24px;
+}
+/* logo 文字2*/
+.shopheader>.logoWen{
+    font-size: 22px;
+    margin-top: 46px;
+    color: #a6a6a6;
+}
+.shopheader>.logoWen a{
+    color: #666;
+}
+
+/* 注册页面 */
+.bigbox{
+    width: 100%;
+    height: 698px;
+    box-shadow: 0 0 6px #e7e7e7 inset;
+    border-bottom: 0px;
+}
+.bigbox>.box{
+    height: 698px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 56px;
+}
+/* 表单输入框 */
+.bigbox>.box .three{
+    display: inline-block;
+    width: 400px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 44px;
+    text-indent: 10px;
+    color: #666;
+    border: 1px solid #ccc;
+    margin-left: 396px;
+    margin-top: 46px;
+    position: relative;
+}
+/* 表单输入框的属性 */
+.bigbox>.box .three>input{
+    width: 280px;
+    height: 44px;
+    border: 0;
+    outline: none;
+    font-size: 14px;    
+}
+
+/* 验证码框 */
+.bigbox>.box .three>.one{
+    background: url(../images/yanzheng_03.png) no-repeat right;
+}
+
+/* 手机验证码的框 */
+.bigbox>.box .three>span{
+    width: 124px;
+    height: 36px;
+    background: #ccc;
+    font-size: 14px;
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    line-height: 36px;
+    text-align: center;
+}
+.bigbox>.box .three>span a{
+    color: #000;    
+}
+
+/* 协议 */
+
+.xieyi{
+    margin-left: 396px;
+    margin-top: 12px;
+}
+.reg{
+    width: 400px;
+    height: 44px;
+    background: #f60;
+    text-align: center;
+    margin-left: 396px;
+    margin-top: 30px;
+}
+.reg a{
+    line-height: 44px;
+    color:#fff;
+    font-size: 26px;
+}
+/* 底部 */
+.bot{
+    width:788px;
+    margin: 30px auto;
+}
+.bot>a{
+    color: #4d4d4d;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 14px;
+}
+.last>p{
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 24px;
+}

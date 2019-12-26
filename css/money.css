@@ -1,0 +1,272 @@
+#mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+#box{
+    width: 470px;
+    height: 280px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -235px;
+    margin-top: -140px;
+    z-index: 999;    
+}
+#box>#box1{
+    width: 470px;    
+    height: 40px;
+    background: #e6e6e6;
+}
+#box>#box1>span{
+    margin-left: 10px;
+    margin-right: 10px;  
+    line-height: 40px;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+}
+#box>#box2{
+    height: 240px;background: url(../images/gantan.png) no-repeat 122px 50px;
+}
+
+#box>#box2>span{
+    height: 74px;
+    font-size: 22px;
+    color: #666;
+    display: inline-block;
+    margin-top: 70px;    
+    margin-left: 214px;   
+}
+
+#box>#box2>div{
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 78px;
+    text-align: center;
+    line-height: 40px;
+    background: #e6e6e6;
+}
+#box>#box2>.ren{
+    background: #f60;
+}
+#box>#box2>.ren>a{
+    color: #fff;
+}
+#box>#box2 a{
+    color: #666;
+}
+/* 样式二 */
+
+/* #box>#box3{
+    height: 240px;background: url(../images/xiaoxixi.png) no-repeat 122px 50px;
+} */
+/* #box>#box3{
+    height: 240px;background: url(../images/gantan.png) no-repeat 122px 50px;
+} */
+#box>#box3> img{
+    margin-left: 125px;
+    margin-top: 0px;
+}
+#box>#box3>span{
+    height: 74px;
+    font-size: 22px;
+    color: #666;
+    display: inline-block;
+    margin-top: 70px;    
+    margin-left: 22px;  
+    cursor: pointer; 
+}
+
+#box>#box3>div{
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 174px;
+    text-align: center;
+    line-height: 40px;
+    background: #e6e6e6;
+}
+#box>#box3>.ren{
+    background: #f60;
+}
+#box>#box3>.ren>a{
+    color: #fff;
+}
+
+
+
+/* 顶部导航左文字 */
+.topnav .fl{
+    font-size: 14px;
+    line-height: 28px;
+    color: #dddddd;
+    text-indent: 260px;
+}
+/* logo */
+.shopheader>.logo{
+    width: 260px;
+    height: 108px;
+    background: #f60;
+    margin-top:-28px; 
+    float:left;
+	text-align:center;
+	box-sizing:border-box;
+}
+.shopheader>span{
+    display: inline-block;
+    font-size: 28px;
+    color: #666;
+     margin-top: 26px;
+    margin-left: 24px;
+}
+/* 内容 */
+.menu{
+    height: 522px;
+    margin-top: 24px;
+}
+.menu>span{
+    font-size: 18px;
+    margin-left: 5px;       
+    color: #666666;
+}
+.menu>span>a{
+    color: #1080e9;
+    margin-right: 5px;
+}
+/* 第一部分 */
+.menu>.one{
+    height: 60px;
+	background-color: #f2f2f2;
+}
+.menu>.one>span{
+    font-size: 16px;
+    color: #4d4d4d;
+    line-height: 60px; 
+    margin-left: 5px;   
+}
+.menu>.one>.fr{
+    margin-right: 92px;
+}
+/* 第二部分 */
+.menu>.two{
+    width: 356px;
+    height: 40px;
+    margin: 10px 0px;
+}
+.menu>.two>.style1{
+    width: 150px;
+	height: 40px;
+    background-color: #ff6600;
+    font-size: 22px;
+    color: #fefefe;
+    line-height: 40px;
+    text-align: center;
+}
+.style2{
+    width: 206px;
+    font-size: 16px;
+	line-height: 40px;
+    color: #bfbfbf;
+    text-indent: 10px;
+}
+/* 第三部分 */
+.menu>.three{
+    width: 1200px;
+	height: 94px;
+	background-color: #f2f2f2;
+}
+.menu>.three>.yi{
+    margin: 28px 28px 32px 64px;
+    width: 125px;
+	height: 34px;
+    border: solid 2px #ff6600;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    color: #4d4d4d;
+    background: url(../images/gou.png) no-repeat right bottom;
+}
+.menu>.three>.er{
+    line-height: 34px;
+    font-size: 14px;
+    color: #4d4d4d;
+    width: 348px;
+	height: 34px;
+    margin: 28px 28px 32px 0px;
+	border: solid 1px #bfbfbf;
+}
+.menu>.three>.er>.wrap{
+    margin-left: 20px;
+}
+.menu>.three>.er>.col{
+    margin-left: 56px;    
+    margin-right: 56px;    
+}
+.menu>.three>.er>.wrap2{
+    color: #bfbfbf;
+}
+.menu>.three>.san{
+    width: 120px;
+	height: 30px;
+    margin: 28px 28px 32px 0px;
+    background-color: #999999;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+.menu>.three>.si{
+    font-size: 16px;
+    margin: 30px 24px 32px 0px;
+    
+}
+/* 第四部分 */
+.menu>.four{
+    width: 228px;
+    height: 60px;
+    margin-top: 12px;
+	background-color: #ff6600;
+    border-radius: 2px;
+    text-align: center;
+}
+.menu>.four>a{
+	font-size: 26px;
+	line-height: 60px;
+	color: #fefefe;
+}
+/* 第五部分 */
+.menu>.five{
+    height: 40px;
+    margin-top: 100px;
+}
+.menu>.five>.style1{
+    width: 150px;
+	height: 40px;
+    background-color: #76aff5;
+    font-size: 22px;
+    color: #fefefe;
+    line-height: 40px;
+    text-align: center;
+}
+.menu>.six{
+    width: 1200px;
+    height: 94px;
+    margin-top: 14px;
+	background-color: #f2f2f2;
+}
+.menu>.six>span{
+    display: inline-block;
+    margin-top: 36px;
+    margin-left: 74px;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+
